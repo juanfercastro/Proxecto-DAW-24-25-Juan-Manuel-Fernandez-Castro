@@ -41,10 +41,10 @@
 > Las necesidades que se cubren con esta idea son las busqueda de empleo activa, formacion de relaciones profesionales y busqueda de ayuda en el foro en un sector en el que cada vez se forman mas personas y cada vez hacen falta mas profesionales cualificados. En la busqueda de empleo ya existen aplicaciones que cubren esa necesidad, tales como LinkedIn, sin embargo, como esta idea está completamente orientada a un sector, resulta mucho mas sencillo el encontrar ofertas que se adecuen a los estándares de los usuarios.
 >
 > Tal como se puede ver en esta grafica del INE, el sector de la programacion y desarrollo tiene una gran cantidad de actividad
-![Estadistica](//doc/img/INE.png)
+![Estadistica](/doc/img/INE.png)
 >
 >El analisis de la idea seria:
-![DAFO](//doc/img/DAFO.png)
+![DAFO](/doc/img/DAFO.png)
 
 ### 2.3- Segmento de clientes
 
@@ -111,6 +111,6 @@ Los usuarios serán todas las personas físicas que usen la aplicacion y los cli
 
 ## 4- Planificación
 
-> ![Planificacion TFG](//doc/img/planificacion.png "Planificacion")
+> ![Planificacion TFG](/doc/img/planificacion.png "Planificacion")
 
 [**<-Anterior**](../../README.md)
