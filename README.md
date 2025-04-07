@@ -16,13 +16,12 @@
 
 ## Taboleiro do proyecto
 
-> *EXPLICACIÓN:* neste punto indica se o proyecto está en fase de desenrolo ou finalizado.
+En desarollo
 
 ## Descrición
 
-> *EXPLICACIÓN*: Realiza unha breve descrición do proxecto. Non menos de 100 palabras e non máis de 300. Resalta o fundamental *coas túas propias palabras**. Utiliza unha linguaxe correcta, *pero natural**, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
-> Descrición básica das ferramentas/tecnoloxías/linguaxes de programación,... empregados.
-
+El proyecto consiste en el desarrollo de una página web dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios, compartir fotos o videos relacionados con sus proyectos personales o en colaboracion con otros desarrolladores, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleol. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
+Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos
 ## Instalación / Posta en marcha
 
 > *EXPLICACIÓN*: Neste apartado describe con toda precisión e a poder ser coa maior simplicidade/facilidade posible, como poñer en marcha a túa aplicación para probala (nun ambiente local). Valorarase moi positivamente que este proceso sexa o máis fácil posible, cunha simple instrución (p. e. un script de instalación, descarga e posta en marcha dun contedor,...).
