@@ -110,6 +110,8 @@ Los usuarios serán todas las personas físicas que usen la aplicacion y los cli
 - **Frontend:** en el frontend de la página se usará HTML5, CSS3 y Javascript con AJAX para peticiones sin recarga de página.
 
 ## 4- Planificación
+> NO ES CALCAR LO QUE YO OS PONGO DE LAS FASES DE ENTREGA, ES LO QUE CREEIS TU Y LAS FASES QUE REALMENTE APLICARÍAS
+
 
 ![Planificacion TFG](/doc/img/planificacion.png "Planificacion")
 
