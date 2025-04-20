@@ -11,16 +11,13 @@
   - [Guía de contribución](#guía-de-contribución)
   - [Links](#links)
 
-> *EXPLICACIÓN*: Este documento será a "*páxina de aterrizaxe*" do teu proxecto. Será ou primeiro que vexan vos que se interesen por el. Cúida a sua redacción con todo ou mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN*" cando creas finalizada a súa redacción.
-> Podes acompañar á redacción deste ficheiro con imaxes ou gifs, pero non abuses deles.
-
 ## Taboleiro do proyecto
 
 En desarollo
 
 ## Descrición
 
-El proyecto consiste en el desarrollo de una página web dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios, compartir fotos o videos relacionados con sus proyectos personales o en colaboracion con otros desarrolladores, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleol. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
+El proyecto consiste en el desarrollo de una página web dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios, compartir fotos o videos relacionados con sus proyectos personales o en colaboracion con otros desarrolladores, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
 Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos
 ## Instalación / Posta en marcha
 
