@@ -49,31 +49,27 @@ El analisis de la idea seria:
 ### 2.3- Segmento de clientes
 
 DevLink está dirigida a todos los miembros del sector de la programacion, tanto si estan en búsqueda de empleo o no, además de empresas dedicadas al mismo sector que de igual forma esten buscando trabajadores o no.
->Los usuarios serán todas las personas físicas que usen la aplicacion y los clientes serán tanto las empresas o entidades que recurran a la aplicacion, ya que para el publicitarse deberán realizar un pago, como las personas físicas que recurran a las funcionalidades premium de la aplicacion
+>
+Los usuarios serán todas las personas físicas que usen la aplicacion y los clientes serán tanto las empresas o entidades que recurran a la aplicacion, ya que para el publicitarse deberán realizar un pago, como las personas físicas que recurran a las funcionalidades premium de la aplicacion
 
 ### 2.4- Competencia
 
-> Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsqueda de empleo tales como LinkedIn o Infojobs, asi como redes sociales que sirven como foro, por ejemplo Stack Overflow o Reddit (en el caso de Reddit existen comunidades o "subreddits" creados para colaboracion entre desarrolladores)
+Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsqueda de empleo tales como LinkedIn o Infojobs, asi como redes sociales que sirven como foro, por ejemplo Stack Overflow o Reddit (en el caso de Reddit existen comunidades o "subreddits" creados para colaboracion entre desarrolladores)
 
 ### 2.5- Proposta de valor
 
-> - La principal diferencia entre DevLink y otras plataformas es que está completamente orientada a los profesionales en desarrollo de software.
-> - Algunas de las mejoras de DevLink serán: un foro integrado para colaboración, publicaciones estilo "post" sobre los proyectos para demostrar conocimientos y posibilidad de seguir usuarios o empresas.
-> - Se aporta una solución a un sector con una gran demanda como el del desarrollo, permitiendo mas fácilemente que las empresas encuentren profesionales adecuados a sus requerimientos y viceversa.
-> - Los programadores dispondrán de una plataforma dedicada a ellos, además, al integrar varios servicios (facilidad en las conexiones profesionales, foro...) el beneficio percibido por los usuarios es mayor.
+- La principal diferencia entre DevLink y otras plataformas es que está completamente orientada a los profesionales en desarrollo de software.
+- Algunas de las mejoras de DevLink serán: un foro integrado para colaboración, publicaciones estilo "post" sobre los proyectos para demostrar conocimientos y posibilidad de seguir usuarios o empresas.
+- Se aporta una solución a un sector con una gran demanda como el del desarrollo, permitiendo mas fácilemente que las empresas encuentren profesionales adecuados a sus requerimientos y viceversa.
+- Los programadores dispondrán de una plataforma dedicada a ellos, además, al integrar varios servicios (facilidad en las conexiones profesionales, foro...) el beneficio percibido por los usuarios es mayor.
 
 ### 2.6- Forma xurídica
 
-> La forma jurídica de DevLink será autónomo ya que el proceso de constitución es simple y consta de pocas dificultades administrativas, además que los costes en inversiones serán menores.
+La forma jurídica de DevLink será autónomo ya que el proceso de constitución es simple y consta de pocas dificultades administrativas, además que los costes en inversiones serán menores.
 
 ### 2.7- Investimentos
 
 #### 2.7.1- Custos
-
-> > _EXPLICACIÓN_: Neste apartado idicaremos o invertimento
->
-> - Diferenzando custos fixos de variables.
-> - Computando impostos e custos sociais.
 - Costes fijos: 
     - Cuota de autónomo: 80€ mensuales 
     - Hosting en Vultr: 28€/mes
@@ -89,7 +85,6 @@ DevLink está dirigida a todos los miembros del sector de la programacion, tanto
 
 #### 2.7.2- Ingresos
 
-> _EXPLICACIÓN_: Neste apartado indicarase unha previsión de ventas e unha política de prezos. Isto implicar apuntar unha previsión de ventas e unha política de prezos.
 - Creacion de usuarios premium: 4.99-9.99€/mes
 - Publicidad: 1-5€ por 1000 anuncios
 
@@ -97,16 +92,17 @@ DevLink está dirigida a todos los miembros del sector de la programacion, tanto
 
 #### 2.8.1- Viabilidade técnica
 
->El proyecto DevLink es viable desde el punto de vista técnico. Al llevarse a cabo en un entorno digital no requiere de materias primas ni de maquinaria e instalaciones extras aparte del equipo informático, además, como se realiza en una vivienda ya acondicionada (con una red wifi profesional aparte y facturas deducidas), los costes de infraestructura y mobiliario se reducen significativamente.
->En lo referido al proceso productivo no existen impedimientos técnicos ya que las teconologías a utilizar están todas disponibles y cuentan con una amplia documentación.
+El proyecto DevLink es viable desde el punto de vista técnico. Al llevarse a cabo en un entorno digital no requiere de materias primas ni de maquinaria e instalaciones extras aparte del equipo informático, además, como se realiza en una vivienda ya acondicionada (con una red wifi profesional aparte y facturas deducidas), los costes de infraestructura y mobiliario se reducen significativamente.
+>
+En lo referido al proceso productivo no existen impedimientos técnicos ya que las teconologías a utilizar están todas disponibles y cuentan con una amplia documentación.
 
 #### 2.8.2 - Viabilidade económica
 
->Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos
+Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos
 
 #### 2.8.3- Conclusión
 
->Finalmente se puede llegar a la conclusión de que DevLink es tanto técnica como económicamente viable gracias al bajo coste de inversión al usar equipo propio y los costes iniciales se pueden suplir con ayudas de emprendimiento IEBT, con todo estoy teniendo en cuenta un crecimiento moderado de usuarios, la idea es viable
+Finalmente se puede llegar a la conclusión de que DevLink es tanto técnica como económicamente viable gracias al bajo coste de inversión al usar equipo propio y los costes iniciales se pueden suplir con ayudas de emprendimiento IEBT, con todo estoy teniendo en cuenta un crecimiento moderado de usuarios, la idea es viable
 
 ## 3- Requirimentos técnicos
 
