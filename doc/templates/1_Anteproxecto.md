@@ -21,7 +21,7 @@
 
 ## 1- Descrición do proxecto
 
-La idea es desarollar un sitio web similar a una red social dedicada a la programacion, en la que no solo se podrá hacer publicaciones sobre los proyectos que lleves a cabo si no que también será posible la búsqueda de empleo en el mismo sector, ya sea mediante un anuncio publico o tratando directamente con la empresa que estés interesado, también dispondrá de un foro en el que los usuarios podrán ayudarse entre ellos o simplemente interactuar. El objetivo de esta idea es facilitar la busqueda de empleo y la ampliacion de conexiones a los trabajadores de un sector en auge, en el que cada día se genera más competencia.
+La idea es desarollar un sitio web, llamado DevLink, similar a una red social dedicada a la programacion, en la que no solo se podrá hacer publicaciones sobre los proyectos que lleves a cabo si no que también será posible la búsqueda de empleo en el mismo sector, ya sea mediante un anuncio publico o tratando directamente con la empresa que estés interesado, también dispondrá de un foro en el que los usuarios podrán ayudarse entre ellos o simplemente interactuar. El objetivo de esta idea es facilitar la busqueda de empleo y la ampliacion de conexiones a los trabajadores de un sector en auge, en el que cada día se genera más competencia.
 >
 Esta idea se puede comercializar, principalmente mediante publicidad en la web y con esto la opcion de crear usuarios premium para omitir la misma (entre otros beneficios), también las empresas interesadas en la busqueda de nuevos empleados tendrán que asumir un coste para la publicacion de anuncios.
 >
@@ -38,7 +38,7 @@ Las tecnologías que se usaran para este proyecto serán: en el frontend HTML5, 
 
 ### 2.2- Xustificación da idea
 
-Las necesidades que se cubren con esta idea son las busqueda de empleo activa, formacion de relaciones profesionales y busqueda de ayuda en el foro en un sector en el que cada vez se forman mas personas y cada vez hacen falta mas profesionales cualificados. En la busqueda de empleo ya existen aplicaciones que cubren esa necesidad, tales como LinkedIn, sin embargo, como esta idea está completamente orientada a un sector, resulta mucho mas sencillo el encontrar ofertas que se adecuen a los estándares de los usuarios.
+Las necesidades que se cubren con DevLink son las busqueda de empleo activa, formacion de relaciones profesionales y busqueda de ayuda en el foro en un sector en el que cada vez se forman mas personas y cada vez hacen falta mas profesionales cualificados. En la busqueda de empleo ya existen aplicaciones que cubren esa necesidad, tales como LinkedIn, sin embargo, como esta idea está completamente orientada a un sector, resulta mucho mas sencillo el encontrar ofertas que se adecuen a los estándares de los usuarios.
 >
 Tal como se puede ver en esta grafica del INE, el sector de la programacion y desarrollo tiene una gran cantidad de actividad
 ![Estadistica](/doc/img/INE.png)
@@ -48,29 +48,25 @@ El analisis de la idea seria:
 
 ### 2.3- Segmento de clientes
 
-La idea de negocio está dirigida a todos los miembros del sector de la programacion, tanto si estan en búsqueda de empleo o no, además de empresas dedicadas al mismo sector que de igual forma esten buscando trabajadores o no.
-Los usuarios serán todas las personas físicas que usen la aplicacion y los clientes serán tanto las empresas o entidades que recurran a la aplicacion, ya que para el publicitarse deberán realizar un pago, como las personas físicas que recurran a las funcionalidades premium de la aplicacion
+DevLink está dirigida a todos los miembros del sector de la programacion, tanto si estan en búsqueda de empleo o no, además de empresas dedicadas al mismo sector que de igual forma esten buscando trabajadores o no.
+>Los usuarios serán todas las personas físicas que usen la aplicacion y los clientes serán tanto las empresas o entidades que recurran a la aplicacion, ya que para el publicitarse deberán realizar un pago, como las personas físicas que recurran a las funcionalidades premium de la aplicacion
 
 ### 2.4- Competencia
 
-> _EXPLICACIÓN_: Neste apartado deberase indicar que outras empresas operan no mercado. Que cota de mercado teñen e como están posicionadas. Existencia de productos/servizos substitutivos. Como están posicionados.
+> Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsqueda de empleo tales como LinkedIn o Infojobs, asi como redes sociales que sirven como foro, por ejemplo Stack Overflow o Reddit (en el caso de Reddit existen comunidades o "subreddits" creados para colaboracion entre desarrolladores)
 
 ### 2.5- Proposta de valor
 
-> _EXPLICACIÓN_: **Apartado fundamental.**
->
-> - En que se diferencia fronte os competidores.
-> - Que melloras terá fronte os competidores.
-> - Que valor aporta ao mercado.
-> - ¿Porqué mercarán/contratarán este producto/servizo/idea fronte o resto?
+> - La principal diferencia entre DevLink y otras plataformas es que está completamente orientada a los profesionales en desarrollo de software.
+> - Algunas de las mejoras de DevLink serán: un foro integrado para colaboración, publicaciones estilo "post" sobre los proyectos para demostrar conocimientos y posibilidad de seguir usuarios o empresas.
+> - Se aporta una solución a un sector con una gran demanda como el del desarrollo, permitiendo mas fácilemente que las empresas encuentren profesionales adecuados a sus requerimientos y viceversa.
+> - Los programadores dispondrán de una plataforma dedicada a ellos, además, al integrar varios servicios (facilidad en las conexiones profesionales, foro...) el beneficio percibido por los usuarios es mayor.
 
 ### 2.6- Forma xurídica
 
-> _EXPLICACIÓN_: Neste apartado deberedes indicar a forma xurídica: autónomo, soc. Cooperativa, SL,.. Explicando (nun par de frases) por que escolledes esta forma
+> La forma jurídica de DevLink será autónomo ya que el proceso de constitución es simple y consta de pocas dificultades administrativas, además que los costes en inversiones serán menores.
 
 ### 2.7- Investimentos
-
-> _EXPLICACIÓN_: Neste apartado idicaremos o investimentos, aínda que sexa, só unha enumeración de todo o que necesitan (locais, infraestruturas, equipos, suministros, mobiliario...) cuantificando cada elemento.
 
 #### 2.7.1- Custos
 
@@ -78,30 +74,39 @@ Los usuarios serán todas las personas físicas que usen la aplicacion y los cli
 >
 > - Diferenzando custos fixos de variables.
 > - Computando impostos e custos sociais.
+- Costes fijos: 
+    - Cuota de autónomo: 80€ mensuales 
+    - Hosting en Vultr: 28€/mes
+    - Tarifa de internet profesional: 30€/mes
+    - Asesoría fiscal(para apoyo con el papeleo de autónomo): 30€/mes
+    - Proteccion de datos: 120 - 180€
+- Costes varibales:
+    - IRPF e IVA: 15% - 20% sobre beneficio
+    - Mobiliario de oficina: 100 - 200€
+    - Publicidad: 20€/mes
+    - Luz y agua (deducibles)
+
 
 #### 2.7.2- Ingresos
 
 > _EXPLICACIÓN_: Neste apartado indicarase unha previsión de ventas e unha política de prezos. Isto implicar apuntar unha previsión de ventas e unha política de prezos.
+- Creacion de usuarios premium: 4.99-9.99€/mes
+- Publicidad: 1-5€ por 1000 anuncios
 
 ### 2.8- Viabilidade
 
 #### 2.8.1- Viabilidade técnica
 
-> _EXPLICACIÓN_: Neste subapartado deberás defender tendo en conta os datos xa aportados, a viabilidade da realización do proyecto.
-> Evidentemente, para poder xustificar a viabilidade económica do proyecto deberás ter en conta os ingresos. **Ainda que está na parte de empresa, este apartado é interesante dende o punto de vista técnico**
->
-> - Será posible dispoñer dos recursos humanos e medios de produción necesarios (materias primas, maquinaria, instalacións, etc.)?
-> - Existe algún impedimento técnico que dificulte o proceso produtivo?
+>El proyecto DevLink es viable desde el punto de vista técnico. Al llevarse a cabo en un entorno digital no requiere de materias primas ni de maquinaria e instalaciones extras aparte del equipo informático, además, como se realiza en una vivienda ya acondicionada (con una red wifi profesional aparte y facturas deducidas), los costes de infraestructura y mobiliario se reducen significativamente.
+>En lo referido al proceso productivo no existen impedimientos técnicos ya que las teconologías a utilizar están todas disponibles y cuentan con una amplia documentación.
 
 #### 2.8.2 - Viabilidade económica
 
-> _EXPLICACIÓN_: Neste subapartado deberás defender con datos a viabilidade da realización do proyecto, para elo debes indicar os custos e investimentos:
+>Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos
 
 #### 2.8.3- Conclusión
 
-> - É viable?
-> - Os beneficios do proxecto son superiores aos costes?
-> - As perdas poden cubrirse vía financiamento (por parte da administración pública, con subvencións, etc)?
+>Finalmente se puede llegar a la conclusión de que DevLink es tanto técnica como económicamente viable gracias al bajo coste de inversión al usar equipo propio y los costes iniciales se pueden suplir con ayudas de emprendimiento IEBT, con todo estoy teniendo en cuenta un crecimiento moderado de usuarios, la idea es viable
 
 ## 3- Requirimentos técnicos
 
@@ -110,8 +115,6 @@ Los usuarios serán todas las personas físicas que usen la aplicacion y los cli
 - **Frontend:** en el frontend de la página se usará HTML5, CSS3 y Javascript con AJAX para peticiones sin recarga de página.
 
 ## 4- Planificación
-> NO ES CALCAR LO QUE YO OS PONGO DE LAS FASES DE ENTREGA, ES LO QUE CREEIS TU Y LAS FASES QUE REALMENTE APLICARÍAS
-
 
 ![Planificacion TFG](/doc/img/planificacion.png "Planificacion")
 

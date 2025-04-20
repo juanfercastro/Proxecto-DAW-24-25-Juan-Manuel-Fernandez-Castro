@@ -58,5 +58,10 @@ Se usará html, css y javascript con react en el frontend de la web y en el back
 
 ## Links
 
-> EXPLICACIÓN*: Ligazóns externas e descipciones destas ligazóns que creas conveniente indicar aquí. Xeralmente xa van estar integrados coa túa documentación, pero se requires realizar unha listaxe deles, leste é o lugar.
->
+>[Explicación sobre las formas jurídicas.](https://www.stelorder.com/blog/forma-juridica/)
+>[Precio internet profesional](https://www.orange.es/empresas/tarifas/fibra)
+>[Precio Hosting](https://www.vultr.com/)
+>[Precio asesoría fiscal](https://solo-autonomos.es/planes/)
+>[Proteccion de datos (hacer scroll abajo para precios)](https://protecciondatos-lopd.com/presupuesto-proteccion-datos-precio/)
+>[Costes deducibles](https://www.repsol.es/autonomos-y-empresas/asesoramiento/desgravar-luz-autonomo/)
+>[Ayudas para emprendimientos IEBT](https://emprego.xunta.gal/portal/index.php/es/?option=com_content&view=article&id=226)
