@@ -48,7 +48,6 @@ Al ser una web con el mayor parecido a una red social lo único requerido para q
 
 DevLink, al ser una red social para programadores y empresas a nivel nacional, debe cumplir con la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673) así como con el [Real Decreto-ley 12/2018, de 7 de septiembre, de seguridad de las redes y sistemas de información](https://www.boe.es/buscar/act.php?id=BOE-A-2018-12257) y la [Resolución de 11 de mayo de 2023, de la Agencia Española de Protección de Datos, por la que se aprueban las bases reguladoras y se convoca el Premio a la Difusión del Derecho Fundamental a la Protección de Datos en Redes sociales.](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-12049).
 >
-Para el cumplimiento de la primera nombrada (LOPDPGDD), la aplicación deberá contar con un aviso legal y política de privacidad tal como en el caso de la [agencia española de proteccion de datos](https://www.aepd.es/politica-de-privacidad-y-aviso-legal), así como una política de cookies, por ejemplo en [google](https://policies.google.com/technologies/cookies?hl=es).
 
 ## 6- Melloras futuras
 
