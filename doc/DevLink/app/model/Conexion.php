@@ -3,7 +3,7 @@ define("DSN","mysql:host=mariadb;dbname=DevLink");
 define('USER', 'root');
 define('PASS', 'bitnami');
 
-class Connection{
+class Conexion{
     public static function connection(){
         try {
             $db = new PDO(DSN, USER, PASS);

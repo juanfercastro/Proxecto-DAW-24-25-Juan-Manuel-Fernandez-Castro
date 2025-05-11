@@ -10,9 +10,7 @@
 
 ## 1- Codificación
 
-> Crea unha carpeta no teu repositorio e sube o código frecuentemente.
->
-> Mentres se vai codificando a aplicación, iranse atopando problemas e haberá que ir modificando aspectos do deseño. Estes cambios tamén se deben recoller na documentación.
+[Código](/doc/DevLink/)
 
 ## 2- Prototipos
 
@@ -32,7 +30,7 @@
 
 ## 3- Innovación
 
-No caso de utilizar tecnoloxías diferentes ás estudadas no ciclo formativo, fai unha descrición dos retos asumidos e como se resolveron.
+Se usará bootstrap para facilitar el uso de css y de javascript (aun no incluido en el codigo a pesar de que los archivos de bootstrap si están)
 
 ## 4- Probas
 
