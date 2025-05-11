@@ -10,7 +10,7 @@
 
 ## 1- Descrición Xeral
 
-El proyecto consiste en el desarrollo de una página web llamada DevLink y que estará dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios, compartir fotos o videos relacionados con sus proyectos personales o en colaboracion con otros desarrolladores, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
+El proyecto consiste en el desarrollo de una página web llamada DevLink y que estará dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios y crear su propio portfolio con información sobre los proyectos en los que han formado parte y enlaces a su redes sociales, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
 Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos
 
 ## 2- Funcionalidades
@@ -19,9 +19,8 @@ Posibles acciones a realizar en DevLink:
 - Alta de usuario: crear un nuevo usuario, ya sea un desarrollador o empresa, en la base de datos.
 - Edicion de usuario: modificar los datos del usuarios en la base de datos.
 - Eliminar usuario: eliminar el usuario de la base de datos.
-- Nueva publicacion: crear un nuevo post de un usuario en la base de datos.
-- Editar datos de publicacion: editar los datos de un post en la base de datos.
-- Eliminar publicacion: borrar un post de la base de datos.
+- Nuevo portfolio: crear un portfolio para subir a la web.
+- Edicion del portfolio: añadir o modificar informacion de un portfolio ya creado.
 - Publicar oferta de empleo: crear un anuncio de un usuario en la web.
 - Mostrar publicaciones: mostrar las publicaciones de un usuario en la web.
 - Busqueda empleo: mostrar las ofertas disponibles en la web.
@@ -34,8 +33,8 @@ Posibles acciones a realizar en DevLink:
 ## 3- Tipos de usuarios
 
 En DevLink habrá diverssos tipos de usuarios:
-- Usuario estándar: perfil normal de programador usado para subir posts, buscar empleo o usar el foro.
-- Usuario premium: perfil de programador que busca más visibilidad o y ventajas.
+- Usuario estándar: perfil normal de programador usado para subir su portfolio, buscar empleo o usar el foro.
+- Usuario premium: perfil de programador que busca más visibilidad y/o ventajas.
 - Empresa: perfil para entidades empresariales que buscan desarrolladores de software.
 - Administrador: tendrá acceso a todos los perfiles y publicaciones para controlar y eliminar contenido de ser necesario, asi como del foro en ciertos casos.
 - Moderador: perfil que se centrará en moderar el foro, vigilando el contenido del mismo
