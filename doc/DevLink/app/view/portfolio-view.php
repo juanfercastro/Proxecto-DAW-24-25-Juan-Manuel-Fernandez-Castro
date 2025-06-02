@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Landing page -->
-     <a href="app/index.php">Login</a>
+    <h1>Hola <?= $_SESSION['nombre'] ?> </h1>
 </body>
 </html>

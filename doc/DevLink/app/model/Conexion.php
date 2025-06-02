@@ -1,8 +1,5 @@
 <?php
-define("DSN","mysql:host=mariadb;dbname=DevLink");
-define('USER', 'root');
-define('PASS', 'bitnami');
-
+include_once("globals.php");
 class Conexion{
     public static function connection(){
         try {

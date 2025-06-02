@@ -9,17 +9,19 @@ class User {
     private string $pass;
     private string $tipo;
     
-    public function __construct(string $nombre, string $apellidos, string $mail, string $tipo, int $id = null, string $pass = null){
+    public function __construct(string $nombre, string $pass, string $mail, string $tipo=null, string $apellidos = null, int $id = null){
+        $this->nombre = $nombre;
+        $this->mail = $mail;
+        $this->pass = $pass;
+        if(isset($tipo)){
+            $this->tipo = $tipo;
+        }
+        if(isset($pass)){
+            $this->apellidos = $apellidos;
+        }
         if(isset($id)){
             $this->id = $id;
         }
-        if(isset($pass)){
-            $this->pass = $pass;
-        }
-        $this->nombre = $nombre;
-        $this->apellidos = $apellidos;
-        $this->mail = $mail;
-        $this->tipo = $tipo;
     }
 
     /**
@@ -144,7 +146,53 @@ class User {
 }
 
 class UserModel{
-    public static function altaUser(User $u){
+    /* public static function getEmail(){
+        $emails = [];
+        $pdo = Conexion::connection();
+        $sql = "SELECT email FROM usuarios WHERE tipo_usuario = developer OR tipo_usuario = empresa";
+        try {
+            $stmt = $pdo->query($sql);
+            foreach ($stmt as $mail) {
+                $emails[] = $mail;
+            }
+        } catch (PDOException $th) {
+            error_log("Error verificando el correo".$th->getMessage());
+        }finally{
+            $pdo = null;
+            $stmt = null;
+        }
+        return $emails;
+    } */
+
+    public static function getUser($email){
+        $pdo = Conexion::connection();
+        $sql = "SELECT id_usuario, nombre,apellidos,email,contrasena,tipo_usuario FROM usuarios WHERE email = ?";
+        $usuario = null;
+        try{
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(1, $email, PDO::PARAM_INT);
+            $stmt->execute();
+            if($row = $stmt->fetch()){
+                $usuario = new User($row['nombre'],
+                                    $row['contrasena'],
+                                    $row['email'],
+                                    $row['tipo_usuario'],
+                                    $row['apellidos'],
+                                    $row['id_usuario'] );
+            }else{
+                error_log("Usuario no encontrado");
+            }
+        }catch (PDOException $th){
+            error_log("Error verificando el usuario".$th->getMessage());
+        }finally{
+            $pdo = null;
+            $stmt = null;
+        }
+
+        return $usuario;
+    }
+
+    public static function addUser(User $u){
         $pass = sha1($u->getPass());
         $flag = false;
         $pdo = Conexion::connection();
@@ -167,26 +215,29 @@ class UserModel{
         return $flag;
     }
 
-    public function login($mail, $pass){
+    //recoge datos del usuario al iniciar sesion
+    /* public static function login($mail, $pass){
         $flag = false;
+        $password = sha1($pass);
         $pdo = Conexion::connection();
-        $sql = "SELECT COUNT(*) AS user FROM usuarios WHERE email = ? AND contrasena = ?";
+        $sql = "SELECT id_usuario, nombre, email,contrasena,tipo_usuario FROM usuarios WHERE email = ? AND contrasena = ?";
+        $usuario = null; 
         try {
             $stmt = $pdo->prepare($sql);
             $stmt->bindValue(1, $mail, PDO::PARAM_STR);
-            $stmt->bindValue(2, sha1($pass), PDO::PARAM_STR);
+            $stmt->bindValue(2,$password, PDO::PARAM_STR);
             $stmt->execute();
             $resultado = $stmt->fetch();
             $flag = isset($resultado['user']) && $resultado['user']==1;
         } catch (PDOException $th) {
-            error_log("Error comprobando el email" .$th->getMessage());
+            error_log("Error intentando entrar en la cuenta" .$th->getMessage());
             $flag = false;
         }finally{
             $pdo = null;
             $stmt = null;
         }
         return $flag;
-    }
+    } */
 
     public static function editUser(User $u){
         $pass = sha1($u->getPass());
