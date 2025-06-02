@@ -17,51 +17,54 @@ class UserController extends Controller{
     }
 
     public function addUser(){
-        $nombre = $_POST['nombre']??null;
-        $apellidos = $_POST['apellidos']??null;
-        $mail = $_POST['mail']??null;
-        $tipo = $_POST['tipo_user']??null;
-        $pass = $_POST['pass']??null;
-        $pass2 = $_POST['pass2']??null;
+        $nombre = empty($_POST['nombre'])? null: $_POST['nombre'];
+        $apellidos = empty($_POST['apellidos'])? null: $_POST['apellidos'];
+        $mail = empty($_POST['mail'])?null:$_POST['mail'];
+        $tipo = empty($_POST['tipo_user'])?null:$_POST['tipo_user'];
+        $pass = empty($_POST['pass'])?null:$_POST['pass'];
+        $pass2 = empty($_POST['pass2'])?null:$_POST['pass2'];
 
         $errores = '';
-        if(!isset($nombre) || strlen($nombre)>150){
+        if(!isset($nombre)){
             $errores .= 'El nombre es obligatorio,';
-        }
-        if(strlen($nombre)>150){
+        }elseif(strlen($nombre)>150){
             $errores .= 'Nombre es demasiado extenso,';
         }
-        if(strlen($apellidos)>100){
-            $errores .= 'Apellido demasiado extenso,';
+        
+        if(isset($apellidos)){
+            if(strlen($apellidos)>100){
+                $errores .= 'Apellido demasiado extenso,';
+            }
         }
+
         if(!isset($mail)){
             $errores .= 'El correo electrónico es obligatorio,';
-        }
-        if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
+        }elseif(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
             $errores .= 'Formato del correo electrónico incorrecto,';
+        }else{
+            $verificarCorreo = UserModel::getUser($mail);
+            if(isset($verificarCorreo)){
+                $errores .= 'Ya existe una cuenta asignada a ese correo,';
+            }
         }
+        
         if(!isset($tipo)){
             $errores .= 'Debe elegir su tipo de usuario,';
         }
+        
         if(!isset($pass) || !isset($pass2)){
             $errores .= 'Deben rellenarse ambos campos de contraseña,';
-        }
-        if($pass != $pass2){
+        }elseif($pass != $pass2){
             $errores .= 'Las contraseñas no coinciden,';
-        }
-        if(strlen($pass)>30){
+        }elseif(strlen($pass)>30){
             $errores .= 'Contraseña demasiado extensa,';
         }
 
-        $verificarCorreo = UserModel::getUser($mail);
-        if(isset($verificarCorreo)){
-            $errores .= 'Ya existe una cuenta asignada a ese correo,';
-        }
 
         $data = [];
         if(empty($errores)){
-            if(UserModel::addUser(new User($nombre, $mail, $pass, $tipo, $apellidos))){
-                $this->view->show('portfolio');
+            if(UserModel::addUser(new User($nombre, $pass, $mail, $tipo, $apellidos))){
+                $this->loginForm();
             }else{
                 $errores .= 'Error al crear la cuenta';
             }
@@ -73,8 +76,8 @@ class UserController extends Controller{
     }
 
     public function login(){
-        $email = $_POST['mail']??null;
-        $pass = sha1($_POST['pass'])??null;
+        $email = empty($_POST['mail'])?null:$_POST['mail'];
+        $pass = empty($_POST['pass'])?null:sha1($_POST['pass']);
 
         $errores = '';
         if(!isset($email) || !isset($pass)){
@@ -91,7 +94,7 @@ class UserController extends Controller{
 
         if(empty($errores)){
             $_SESSION['id'] = $usuario->getId();
-            $_SESSION['name'] = $usuario->getNombre();
+            $_SESSION['nombre'] = $usuario->getNombre();
             $_SESSION ['tipo'] = $usuario->getTipo();
             $this->view->show('portfolio');
         }

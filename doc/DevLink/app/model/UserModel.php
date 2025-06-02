@@ -1,24 +1,20 @@
 <?php
+include_once("Conexion.php");
 // modelo para la clase usuarios, haciendo distincion entre freelancers y empresas
-
 class User {
-    private int $id;
+    private ?int $id;
     private string $nombre;
     private string $apellidos;
     private string $mail;
     private string $pass;
     private string $tipo;
     
-    public function __construct(string $nombre, string $pass, string $mail, string $tipo=null, string $apellidos = null, int $id = null){
+    public function __construct(string $nombre, string $pass, string $mail, string $tipo, string $apellidos , int $id = null){
         $this->nombre = $nombre;
         $this->mail = $mail;
         $this->pass = $pass;
-        if(isset($tipo)){
-            $this->tipo = $tipo;
-        }
-        if(isset($pass)){
-            $this->apellidos = $apellidos;
-        }
+        $this->tipo = $tipo;
+        $this->apellidos = $apellidos;
         if(isset($id)){
             $this->id = $id;
         }
@@ -196,7 +192,7 @@ class UserModel{
         $pass = sha1($u->getPass());
         $flag = false;
         $pdo = Conexion::connection();
-        $sql = "INSERT INTO usuarios(nombre, apellidos, email, contrasena, tipo) VALUES (?,?,?,?,?)";
+        $sql = "INSERT INTO usuarios(nombre, apellidos, email, contrasena, tipo_usuario) VALUES (?,?,?,?,?)";
         try {
             $stmt = $pdo->prepare($sql);
             $stmt->bindValue(1, $u->getNombre(), PDO::PARAM_STR);
