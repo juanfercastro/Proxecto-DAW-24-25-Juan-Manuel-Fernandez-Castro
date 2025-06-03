@@ -65,6 +65,7 @@ class UserController extends Controller{
         if(empty($errores)){
             if(UserModel::addUser(new User($nombre, $pass, $mail, $tipo, $apellidos))){
                 $this->loginForm();
+                exit;
             }else{
                 $errores .= 'Error al crear la cuenta';
             }
@@ -83,12 +84,12 @@ class UserController extends Controller{
         if(!isset($email) || !isset($pass)){
             $errores .= 'Rellene ambos campos para poder iniciar sesión,';
         }else{
-            //cambian para recoger los datos y compararlos
+            //recoge los datos del usuario y los compara
             $usuario = UserModel::getUser($email);
             if(!isset($usuario)){
                 $errores .= 'No existe una cuenta asignada a ese correo,';
             }elseif($usuario->getMail() != $email || $usuario->getPass() != $pass){
-                $errores .= 'Credenciales incorrectos, pruebe de nuevo,';
+                $errores .= 'Credenciales incorrectos pruebe de nuevo,';
             }
         }
 
@@ -97,6 +98,7 @@ class UserController extends Controller{
             $_SESSION['nombre'] = $usuario->getNombre();
             $_SESSION ['tipo'] = $usuario->getTipo();
             $this->view->show('portfolio');
+            exit;
         }
 
         $data = [];

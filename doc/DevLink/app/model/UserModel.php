@@ -4,20 +4,18 @@ include_once("Conexion.php");
 class User {
     private ?int $id;
     private string $nombre;
-    private string $apellidos;
+    private ?string $apellidos;
     private string $mail;
     private string $pass;
     private string $tipo;
     
-    public function __construct(string $nombre, string $pass, string $mail, string $tipo, string $apellidos , int $id = null){
+    public function __construct(string $nombre, string $pass, string $mail, string $tipo, string $apellidos=null, int $id = null){
         $this->nombre = $nombre;
         $this->mail = $mail;
         $this->pass = $pass;
         $this->tipo = $tipo;
         $this->apellidos = $apellidos;
-        if(isset($id)){
-            $this->id = $id;
-        }
+        $this->id = $id;
     }
 
     /**
@@ -166,7 +164,7 @@ class UserModel{
         $usuario = null;
         try{
             $stmt = $pdo->prepare($sql);
-            $stmt->bindParam(1, $email, PDO::PARAM_INT);
+            $stmt->bindParam(1, $email, PDO::PARAM_STR);
             $stmt->execute();
             if($row = $stmt->fetch()){
                 $usuario = new User($row['nombre'],
@@ -176,7 +174,7 @@ class UserModel{
                                     $row['apellidos'],
                                     $row['id_usuario'] );
             }else{
-                error_log("Usuario no encontrado");
+                error_log("No existe un usuario con ese correo");
             }
         }catch (PDOException $th){
             error_log("Error verificando el usuario".$th->getMessage());
