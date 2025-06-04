@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['nombre'])) {
+    header("Location: ?controller=UserController&action=loginForm");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +13,6 @@
 </head>
 <body>
     <h1>Hola <?= $_SESSION['nombre'] ?> </h1>
+    <a href="?controller=ForoController&action=showForo">Ir al foro</a>
 </body>
 </html>
