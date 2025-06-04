@@ -11,6 +11,7 @@
 ## 1- Sitios web de documentación técnica
 
 ## 2- Fontes de interes
+Referencia para la landing page: [lingoda](https://www.lingoda.com/es/)
 
 ## 3- Sitios oficiais do software utilizado
 

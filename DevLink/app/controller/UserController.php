@@ -16,6 +16,10 @@ class UserController extends Controller{
         $this->view->show('sign');
     }
 
+    public function showPortfolio(){
+        $this->view->show('portfolio');
+    }
+
     public function addUser(){
         $nombre = empty($_POST['nombre'])? null: $_POST['nombre'];
         $apellidos = empty($_POST['apellidos'])? null: $_POST['apellidos'];
@@ -64,7 +68,7 @@ class UserController extends Controller{
         $data = [];
         if(empty($errores)){
             if(UserModel::addUser(new User($nombre, $pass, $mail, $tipo, $apellidos))){
-                $this->loginForm();
+                header("Location:?controller=UserController&action=loginForm");
                 exit;
             }else{
                 $errores .= 'Error al crear la cuenta';
@@ -97,7 +101,7 @@ class UserController extends Controller{
             $_SESSION['id'] = $usuario->getId();
             $_SESSION['nombre'] = $usuario->getNombre();
             $_SESSION ['tipo'] = $usuario->getTipo();
-            $this->view->show('portfolio');
+            header("Location:?controller=UserController&action=showPortfolio");
             exit;
         }
 
