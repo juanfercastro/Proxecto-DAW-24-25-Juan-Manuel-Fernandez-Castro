@@ -3,10 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/landing.css">
 </head>
 <body>
     <!-- Landing page -->
-     <a href="app/index.php">Login</a>
+    <header>
+        <div id="icono_menu">
+          <a href="/index.html" class="logo">
+            <img src="/assets/img/icon.png" alt="enlace de vuelta al inicio" class="logo">
+          </a>
+        </div>
+        
+        <span class="header-title">DevLink</span>
+
+        <div class="mobile-menu">
+          <button class="hamburguesa">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="app/index.php?controller=UserController&action=loginForm">
+            <i class="fa-solid fa-right-from-bracket boton"></i>
+          </a>
+        </div>
+        
+        <nav class="nav-menu">
+          <ul>
+            <li class="nav-item"><a href="app/index.php?controller=ForoController&action=showForo">Foro</a></li>
+            <li><a href="app/index.php?controller=UserController&action=loginForm" class="boton"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesion</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="doscolumn">
+            <section class="doscolumn-text">
+                <h2>¿Listo para impulsar tu carrera?</h2>
+                <p>Únete a miles de desarrolladores que ya confían en DevLink para hacer crecer su carrera profesional.</p>
+                <a href="login.html" class="btn btn-primary boton">Regístrate</a>
+            </section>
+            <figure class="doscolumn-image">
+                <img src="assets/img/colaboracion.jpg" alt="Desarrolladores trabajando juntos">
+            </figure>
+        </article>
+
+        <!-- Article Ventajas -->   
+        <article class="ventajas">
+            <section class="cards-title">
+                <h2>Hecho por y para desarrolladores.</h2>
+                <p>Te ayudamos a encontrar ofertas de empleo, conectar con otros desarrolladores y crear portfolios únicos. Todo lo que necesitas para destacar en el mundo del desarrollo.</p>
+            </section>
+            <section class="cards">
+                <section class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Ofertas de Empleo</h3>
+                    <p>Encuentra las mejores oportunidades laborales específicamente para desarrolladores. Filtra por tecnología, experiencia y ubicación.</p>
+                    <a href="ofertas.html" class="btn btn-outline boton">Ver Ofertas</a>
+                </section>
+                
+                <section class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portfolio Personal</h3>
+                    <p>Crea tu portfolio profesional de forma sencilla. Muestra tus proyectos, habilidades y experiencia de manera atractiva.</p>
+                    <a href="portfolio.html" class="btn btn-outline boton">Crear Portfolio</a>
+                </section>
+                
+                <section class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Foro Especializado</h3>
+                    <p>Únete a nuestra comunidad de desarrolladores. Resuelve dudas, comparte conocimientos y colabora en proyectos.</p>
+                    <a href="foro.html" class="btn btn-outline boton">Ir al Foro</a>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div>2025 © DevLink. Todos los derechos reservados.</div>
+            <div class="social-links">
+                <a href="https://x.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/?locale=es_ES%2F" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit"></i></a>
+                <a href="https://es.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/header.js"></script>
 </body>
 </html>

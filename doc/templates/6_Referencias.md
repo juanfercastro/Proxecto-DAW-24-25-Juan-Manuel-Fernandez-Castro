@@ -11,9 +11,14 @@
 ## 1- Sitios web de documentación técnica
 
 ## 2- Fontes de interes
-Referencia para la landing page: [lingoda](https://www.lingoda.com/es/)
+Referencia para la landing page: 
+ - [lingoda](https://www.lingoda.com/es/)
+ - [Youtube](https://www.youtube.com/premium?ybp=Sg0IBhIJdW5saW1pdGVk4AEC)
+ - [FontAwesome](https://fontawesome.com/icons)
 
 ## 3- Sitios oficiais do software utilizado
+Iconos: [Fontawesome](https://fontawesome.com/icons)
+Imagenes: [Unsplash](https://unsplash.com/es)
 
 ## 4- Normas ou documentos legais
 

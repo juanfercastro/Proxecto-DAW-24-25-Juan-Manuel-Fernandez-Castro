@@ -7,18 +7,24 @@
       </a>
     </div>
     
-    <button class="hamburguesa">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="mobile-menu">
+      <button class="hamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a href="?controller=UserController&action=cerrarSesion">
+        <i class="fa-solid fa-right-from-bracket boton"></i>
+      </a>
+    </div>
 
-    <span class="text-desktop">DevLink</span>
+
+    <span class="header-title text-desktop">DevLink</span>
     
     <nav class="nav-menu">
       <ul>
-        <li class="nav-item"><a href="?controller=UserController&action=showPortfolio">Portfolio</a><span class="barra"></span></li>
-        <li class="nav-item"><a href="?controller=ForoController&action=showForo">Foro</a><span class="barra"></span></li>
-        <li class="nav-item"><a href="?controller=UserController&action=showOfertas">Ofertas</a><span class="barra"></span></li>
-        <li class="nav-item"><a href="?controller=UserController&action=cerrarSesion">Cerrar Sesion</a><span class="barra"></span></li>
+        <li class="nav-item"><a href="?controller=UserController&action=showPortfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="?controller=ForoController&action=showForo">Foro</a></li>
+        <li class="nav-item"><a href="?controller=UserController&action=showOfertas">Ofertas</a></li>
+        <li><a href="?controller=UserController&action=cerrarSesion" class="boton">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a></li>
       </ul>
     </nav>
 </header>
