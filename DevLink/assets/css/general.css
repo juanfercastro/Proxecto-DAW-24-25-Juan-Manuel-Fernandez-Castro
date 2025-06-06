@@ -195,7 +195,7 @@ nav ul li:last-of-type{
 }
 
 .ventaja-card {
-    background: linear-gradient(135deg, var(--color-fondo-oscuro) 0%, var(--color-fondo-claro) 100%);
+    background: linear-gradient(135deg, var(--color-fondo-oscuro) 0%, #79ccff 100%);
     border-radius: var(--border-radius);
     border: 1px solid black;
     overflow: hidden;
