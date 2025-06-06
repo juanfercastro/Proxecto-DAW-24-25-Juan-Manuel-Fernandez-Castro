@@ -5,23 +5,16 @@
 }
   
 :root {
-    /* --color-secundario: #c09551;
-    --color-secundario-claro: #f4bc63ac;
-  
-    --color-secundario-oscuro: #7F632E;
-    --color-primario: rgb(50, 50, 63); */
-    --color-fondo-oscuro: #3431f7;
-    --color-fondo-claro:#63a0fc;
+    --color-fondo-oscuro: #0066ff;
+    --color-fondo-claro:#d4f9ff;
     --color-fondo-header:#090760;
     --color-fondo-footer: rgba(22, 19, 59, 0.895);
     --hover-redes: #599cff;
     --bg-btn: rgb(141 227 233);
     --border-radius: 10px;
-
-  
     --size-h1: 2.5rem;
     --transition: all 0.2s ease-in-out;
-    /* font: 14px/1.6 var(--fuente-primaria); */
+    
     font-size: 16px;
 }
 
@@ -30,6 +23,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background: linear-gradient(135deg, var(--color-fondo-claro) 0%, var(--color-fondo-oscuro) 100%);
 }
 
 h2{
@@ -174,8 +168,9 @@ nav ul li:last-of-type{
 =            cards          =
 =============================================*/
  .ventajas{
+    max-width: 90%;
+    margin: 1rem auto;
     background-color: white;
-    margin: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
  }

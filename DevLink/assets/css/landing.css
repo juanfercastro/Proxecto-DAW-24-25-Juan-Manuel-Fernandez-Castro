@@ -1,19 +1,12 @@
-body{
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 main > article {
-    padding: 5%;
+    padding: 2%;
 }
 
 article.doscolumn{
-    margin: 1rem;
+    max-width: 90%;
+    margin: 1rem auto;
+    background: linear-gradient(135deg, #004093 0%, #244f91 100%);
     border-radius: var(--border-radius);
-    background: linear-gradient(135deg, var(--color-fondo-oscuro) 0%, var(--color-fondo-claro) 100%);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     align-items: center;
