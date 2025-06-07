@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevLink</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/general.css">
-    <link rel="stylesheet" href="/assets/css/landing.css">
+    <link rel="stylesheet" href="/assets/css/general.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/landing.css" type="text/css">
 </head>
 <body>
     <!-- Landing page -->
     <header>
-        <div id="icono_menu">
-          <a href="/index.html" class="logo">
+        <a href="/index.html" class="logo">
             <img src="/assets/img/icon.png" alt="enlace de vuelta al inicio" class="logo">
-          </a>
-        </div>
+        </a>
         
         <span class="header-title">DevLink</span>
 
@@ -48,22 +46,22 @@
         </article>
 
         <!-- Article Ventajas -->   
-        <article class="ventajas">
+        <article class="article-cards">
             <section class="cards-title">
                 <h2>Hecho por y para desarrolladores.</h2>
-                <p>Te ayudamos a encontrar ofertas de empleo, conectar con otros desarrolladores y crear portfolios únicos. Todo lo que necesitas para destacar en el mundo del desarrollo.</p>
+                <p>Te ayudamos a encontrar ofertas de empleo, conectar con otros desarrolladores y crear portfolios únicos, todo lo que necesitas para destacar en el mundo del desarrollo.</p>
             </section>
             <section class="cards">
-                <section class="ventaja-card">
+                <section class="card">
                     <div class="ventaja-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Ofertas de Empleo</h3>
-                    <p>Encuentra las mejores oportunidades laborales específicamente para desarrolladores. Filtra por tecnología, experiencia y ubicación.</p>
+                    <p>Encuentra las mejores oportunidades laborales específicamente para desarrolladores.</p>
                     <a href="app/index.php?controller=UserController&action=showOfertas" class="btn btn-outline boton">Ver Ofertas</a>
                 </section>
                 
-                <section class="ventaja-card">
+                <section class="card">
                     <div class="ventaja-icon">
                         <i class="fas fa-user"></i>
                     </div>
@@ -72,7 +70,7 @@
                     <a href="app/index.php?controller=UserController&action=showPortfolio" class="btn btn-outline boton">Crear Portfolio</a>
                 </section>
                 
-                <section class="ventaja-card">
+                <section class="card">
                     <div class="ventaja-icon">
                         <i class="fas fa-comments"></i>
                     </div>

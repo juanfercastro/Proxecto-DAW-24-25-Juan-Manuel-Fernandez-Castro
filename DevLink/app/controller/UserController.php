@@ -17,7 +17,13 @@ class UserController extends Controller{
     }
 
     public function showPortfolio(){
-        $this->view->show('portfolio');
+        if (!isset($_SESSION['nombre'])) {
+            $this->loginForm();
+            exit;
+        }else{
+            $this->view->show('portfolio');
+            exit;
+        }
     }
 
     public function addUser(){
@@ -60,8 +66,8 @@ class UserController extends Controller{
             $errores .= 'Deben rellenarse ambos campos de contraseña,';
         }elseif($pass != $pass2){
             $errores .= 'Las contraseñas no coinciden,';
-        }elseif(strlen($pass)>30){
-            $errores .= 'Contraseña demasiado extensa,';
+        }elseif(strlen($pass)>25 || strlen($pass)<8){
+            $errores .= 'La contraseña debe tener entre 8 y 25 caracteres,';
         }
 
 
@@ -110,5 +116,12 @@ class UserController extends Controller{
             $data['errores'] = $errores;
             $this->view->show('login', $data);
         }
+    }
+
+    public function logout(){
+        session_unset();
+        session_destroy();
+        $this->loginForm();
+        exit;
     }
 }

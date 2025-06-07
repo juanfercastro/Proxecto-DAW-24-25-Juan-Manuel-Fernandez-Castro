@@ -1,9 +1,3 @@
-<?php
-if (!isset($_SESSION['nombre'])) {
-    header("Location: ?controller=UserController&action=loginForm");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

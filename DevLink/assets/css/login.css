@@ -1,0 +1,17 @@
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: gray;
+    width: 30%;
+    min-width: 250px;
+    border-color: #aeebf0;
+}
+
+.logo{
+    max-width: 200px;
+}

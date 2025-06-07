@@ -35,6 +35,8 @@
 >
 > No caso de que sexan precisas.
 
+En caso de que no se vean las imágenes se debe a un problema de permisos en /assets, al conceder permisos a la carpeta deberían verse las imágenes
+
 ## 2- Manual de usuario
 
 > *EXPLICACIÓN:* Neste apartado fara

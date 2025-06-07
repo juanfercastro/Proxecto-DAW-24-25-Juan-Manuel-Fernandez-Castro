@@ -81,12 +81,6 @@ header {
 max-width: 100px;
 }
 
-#icono_menu{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
 .mobile-menu{
     display: flex;
     justify-content: center;
@@ -167,7 +161,7 @@ nav ul li:last-of-type{
 /*=============================================
 =            cards          =
 =============================================*/
-.ventajas{
+.article-cards{
     max-width: 90%;
     margin: 1rem auto;
     background-color: white;
@@ -194,7 +188,7 @@ nav ul li:last-of-type{
   
 }
 
-.ventaja-card {
+.card {
     background: linear-gradient(135deg, var(--color-fondo-oscuro) 0%, #79ccff 100%);
     border-radius: var(--border-radius);
     border: 1px solid black;
@@ -218,6 +212,21 @@ nav ul li:last-of-type{
     font-size: 24px;
 }
 /*=====  End of cards  ======*/
+
+
+
+/*=============================================
+=            Formularios            =
+=============================================*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*=====  End of Formularios  ======*/
+
 
 
 
