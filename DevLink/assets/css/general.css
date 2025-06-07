@@ -167,15 +167,15 @@ nav ul li:last-of-type{
 /*=============================================
 =            cards          =
 =============================================*/
- .ventajas{
+.ventajas{
     max-width: 90%;
     margin: 1rem auto;
     background-color: white;
     border-radius: var(--border-radius);
     text-align: center;
- }
+}
 
- .cards-title{
+.cards-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,9 +183,9 @@ nav ul li:last-of-type{
     gap: 17px;
     font-size: 20px;
     text-align: center;
- }
+}
 
- .cards {
+.cards {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit,250px);

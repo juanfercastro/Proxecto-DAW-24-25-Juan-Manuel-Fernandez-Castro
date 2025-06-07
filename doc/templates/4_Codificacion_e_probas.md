@@ -8,7 +8,7 @@
 
 ## 1- Codificación
 
-[Código](/doc/DevLink/)
+[Código](/DevLink/)
 
 ## 2- Prototipos
 
@@ -16,7 +16,7 @@
 
 ## 3- Innovación
 
-Se usará bootstrap para facilitar el uso de css y de javascript (aun no incluido en el codigo a pesar de que los archivos de bootstrap si están)
+Se usará bootstrap para facilitar el uso de css en formularios y jquery para acelerar el desarrollo en js
 
 ## 4- Probas
 

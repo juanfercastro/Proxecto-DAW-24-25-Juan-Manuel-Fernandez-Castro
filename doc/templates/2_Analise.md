@@ -37,7 +37,6 @@ En DevLink habrá diverssos tipos de usuarios:
 - Usuario premium: perfil de programador que busca más visibilidad y/o ventajas.
 - Empresa: perfil para entidades empresariales que buscan desarrolladores de software.
 - Administrador: tendrá acceso a todos los perfiles y publicaciones para controlar y eliminar contenido de ser necesario, asi como del foro en ciertos casos.
-- Moderador: perfil que se centrará en moderar el foro, vigilando el contenido del mismo
 
 ## 4- Contorno operacional
 
