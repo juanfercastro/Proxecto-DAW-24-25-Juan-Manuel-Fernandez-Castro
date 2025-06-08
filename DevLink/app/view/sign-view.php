@@ -29,7 +29,7 @@
 
     <!-- Formulario de login -->
     <form action="?controller=UserController&action=addUser" method="post">
-    <div class="col-12 col-md-12">
+      <div class="col-12 col-md-12">
         <label for="tipo_user">Tipo de usuario</label>
         <select name="tipo_user" id="tipo_user" class="form-control" required>
             <option value="" disabled selected>Selecciona tipo...</option>
@@ -57,9 +57,14 @@
         <input type="password" name="pass2" id="pass2" class="form-control" placeholder="Repetir contraseña" required>
       </div>
 
+      <div class="col-md-12 checkbox-container">
+        <input type="checkbox" name="pol_priv" id="pol_priv">
+        <label for="pol_priv">Acepto la <a href="#">política de privacidad</a></label>
+      </div>
+
       <button type="submit" class="boton">Registrarse</button>
     </form>
-    <p>Ya tienes una cuenta? <a href="?controller=UserController&action=signForm">Entra</a>!</p>
+    <p>Ya tienes una cuenta? <a href="?controller=UserController&action=loginForm">Entra</a></p>
   </article>
   </main>
 </body>

@@ -22,7 +22,7 @@ a{
 .card{
     background: #39126c;
     width: 30%;
-    min-width: 250px;
+    min-width: 300px;
     border-color: #ddf4ff;
 }
 
@@ -42,6 +42,10 @@ a{
     padding: .5rem 2rem;
 }
 
+.card a{
+    color: aqua;
+}
+
 i{
     position: absolute;
     top: 13px;
@@ -52,3 +56,43 @@ i{
 select.form-control{
     -webkit-appearance: listbox;
 }
+
+/* Contenedor para alinear el checkbox con el texto */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo base del checkbox */
+  .checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00e0d6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+  }
+  
+  /* Cuando está marcado */
+  .checkbox-container input[type="checkbox"]:checked {
+    background-color: #00e0d6;
+  }
+  
+  /* Icono de check al marcar */
+  .checkbox-container input[type="checkbox"]:checked::after {
+    content: "\2713";
+    color: #1a0038;
+    font-weight: bold;
+    position: absolute;
+    top: -25%;
+    left: 5%;
+  }
+
+  .checkbox-container a:active{
+    color: #fafafa;
+  }
