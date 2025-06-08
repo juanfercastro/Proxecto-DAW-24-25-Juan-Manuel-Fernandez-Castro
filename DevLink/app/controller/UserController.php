@@ -10,16 +10,17 @@ class UserController extends Controller{
 
     public function loginForm(){
         $this->view->show('login');
+        exit;
     }
 
     public function signForm(){
         $this->view->show('sign');
+        exit;
     }
 
     public function showPortfolio(){
         if (!isset($_SESSION['nombre'])) {
             $this->loginForm();
-            exit;
         }else{
             $this->view->show('portfolio');
             exit;
@@ -62,12 +63,13 @@ class UserController extends Controller{
             $errores .= 'Debe elegir su tipo de usuario,';
         }
         
-        if(!isset($pass) || !isset($pass2)){
+        $pattern = '/^(?=.*\d)[A-Za-z\d]{8,25}$/';
+        if(!preg_match($pattern, $pass)){
+            $errores .= 'La contraseña debe tener entre 8 y 25 caracteres y contener al menos 1 número,';
+        }elseif(!isset($pass) || !isset($pass2)){
             $errores .= 'Deben rellenarse ambos campos de contraseña,';
         }elseif($pass != $pass2){
             $errores .= 'Las contraseñas no coinciden,';
-        }elseif(strlen($pass)>25 || strlen($pass)<8){
-            $errores .= 'La contraseña debe tener entre 8 y 25 caracteres,';
         }
 
 
@@ -94,12 +96,17 @@ class UserController extends Controller{
         if(!isset($email) || !isset($pass)){
             $errores .= 'Rellene ambos campos para poder iniciar sesión,';
         }else{
-            //recoge los datos del usuario y los compara
-            $usuario = UserModel::getUser($email);
-            if(!isset($usuario)){
-                $errores .= 'No existe una cuenta asignada a ese correo,';
-            }elseif($usuario->getMail() != $email || $usuario->getPass() != $pass){
-                $errores .= 'Credenciales incorrectos pruebe de nuevo,';
+
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                $errores .= 'Formato del correo electrónico incorrecto,';
+            }else{
+                //recoge los datos del usuario y los compara
+                $usuario = UserModel::getUser($email);
+                if(!isset($usuario)){
+                    $errores .= 'No existe una cuenta asignada a ese correo,';
+                }elseif($usuario->getMail() != $email || $usuario->getPass() != $pass){
+                    $errores .= 'Credenciales incorrectos pruebe de nuevo,';
+                }
             }
         }
 

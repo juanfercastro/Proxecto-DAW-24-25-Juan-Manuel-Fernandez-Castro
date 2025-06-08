@@ -5,13 +5,46 @@ main{
     align-items: center;
 }
 
+ul{
+    padding-left: 0;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    color: red;
+}
+
+a{
+    margin-bottom: 10px;
+}
+
 .card{
-    background: gray;
+    background: #39126c;
     width: 30%;
     min-width: 250px;
-    border-color: #aeebf0;
+    border-color: #ddf4ff;
 }
 
 .logo{
     max-width: 200px;
+}
+
+.col-md-12{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-control{
+    width: 100%;
+    padding: .5rem 2rem;
+    margin-bottom: 15px;
+}
+
+i{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: gray;
 }
