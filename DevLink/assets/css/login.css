@@ -30,16 +30,16 @@ a{
     max-width: 200px;
 }
 
-.col-md-12{
+.space-icon{
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .form-control{
-    width: 100%;
-    padding: .5rem 2rem;
     margin-bottom: 15px;
+}
+
+.icon-input{
+    padding: .5rem 2rem;
 }
 
 i{
@@ -47,4 +47,8 @@ i{
     top: 13px;
     left: 10px;
     color: gray;
+}
+
+select.form-control{
+    -webkit-appearance: listbox;
 }

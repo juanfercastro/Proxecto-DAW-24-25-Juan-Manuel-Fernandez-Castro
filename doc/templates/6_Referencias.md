@@ -16,8 +16,11 @@ Referencia para la landing page:
  - [Youtube](https://www.youtube.com/premium?ybp=Sg0IBhIJdW5saW1pdGVk4AEC)
  - [FontAwesome](https://fontawesome.com/icons)
 
+Referencia iconos login: [Codeanywhere](https://codeanywhere.com/signin)
+
 ## 3- Sitios oficiais do software utilizado
 Iconos: [Fontawesome](https://fontawesome.com/icons)
+>
 Imagenes: [Unsplash](https://unsplash.com/es)
 
 ## 4- Normas ou documentos legais

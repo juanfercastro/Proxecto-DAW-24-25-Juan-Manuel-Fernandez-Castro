@@ -10,12 +10,10 @@ class UserController extends Controller{
 
     public function loginForm(){
         $this->view->show('login');
-        exit;
     }
 
     public function signForm(){
         $this->view->show('sign');
-        exit;
     }
 
     public function showPortfolio(){

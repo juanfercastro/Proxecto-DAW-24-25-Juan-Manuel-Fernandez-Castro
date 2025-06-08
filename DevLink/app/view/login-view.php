@@ -25,20 +25,18 @@
                         }
                         echo "</ul>";
                     }
-
-                    $data = null;
                 ?>
 
                 <!-- Formulario de login -->
                 <form action="?controller=UserController&action=login" method="post">
-                    <div class="col-md-12">
+                    <div class="col-md-12 space-icon">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Email" required>
+                        <input type="email" class="form-control icon-input" id="mail" name="mail" placeholder="Email" required>
                     </div>
                     
-                    <div class="col-md-12">
+                    <div class="col-md-12 space-icon">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Password" required>
+                        <input type="password" class="form-control icon-input" id="pass" name="pass" placeholder="Password" required>
                     </div>
 
                     <button type="submit" class="boton">Entrar</button>
