@@ -6,30 +6,25 @@ include_once(MODEL_PATH."EntradaModel.php");
 
 class ForoController extends Controller{
     public function showForo(){
-        if (isset($_SESSION['id'])) {
-            $data = [];
-            $entradasPropias = [];
-            $otrasEntradas = [];
-            $data['entradas'] = EntradaModel::getAll();
-            foreach ($data['entradas'] as $entrada) {
-                if ($entrada->getId_creador()==$_SESSION['id']) {
-                    $entradasPropias[] = $entrada;
-                }else{
-                    $otrasEntradas[] = $entrada;
-                }
+        $data = [];
+        $entradasPropias = [];
+        $otrasEntradas = [];
+        $data['entradas'] = EntradaModel::getAll();
+        foreach ($data['entradas'] as $entrada) {
+            if ($entrada->getId_creador()==$_SESSION['id']) {
+                $entradasPropias[] = $entrada;
+            }else{
+                $otrasEntradas[] = $entrada;
             }
-
-            $data = [
-                'propias' => $entradasPropias,
-                'otras' => $otrasEntradas
-            ];
-
-            $this->view->show('foro', $data);
-            exit;
-        }else{
-            header("Location: ?controller=UserController&action=loginForm");
-            exit;
         }
+
+        $data = [
+            'propias' => $entradasPropias,
+            'otras' => $otrasEntradas
+        ];
+
+        $this->view->show('foro', $data);
+        exit;
     }
 
     public function addEntrada(){

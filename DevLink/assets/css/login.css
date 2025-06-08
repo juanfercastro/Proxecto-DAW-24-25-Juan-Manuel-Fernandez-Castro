@@ -1,6 +1,10 @@
+
+/*=============================================
+=            cambios generales para estetica            =
+=============================================*/
+
 main{
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -46,6 +50,11 @@ a{
     color: aqua;
 }
 
+/*=====  End of cambios generales para estetica  ======*/
+
+
+
+/*posicionamiento de los iconos en los input*/
 i{
     position: absolute;
     top: 13px;
@@ -53,11 +62,12 @@ i{
     color: gray;
 }
 
+/* devolver el icono de la flecha al select */
 select.form-control{
     -webkit-appearance: listbox;
 }
 
-/* Contenedor para alinear el checkbox con el texto */
+/* modificar los estilos del checkbox */
 .checkbox-container {
     display: flex;
     align-items: center;
@@ -89,7 +99,7 @@ select.form-control{
     color: #1a0038;
     font-weight: bold;
     position: absolute;
-    top: -25%;
+    top: -28%;
     left: 5%;
   }
 

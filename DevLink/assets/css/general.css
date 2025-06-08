@@ -26,6 +26,13 @@ body {
     background: linear-gradient(135deg, var(--color-fondo-claro) 0%, var(--color-fondo-oscuro) 100%);
 }
 
+main{
+    min-height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 h2{
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -201,7 +208,7 @@ nav ul li:last-of-type{
     gap: 1rem;
 }
 
-.ventaja-icon {
+.imagen-icon {
     width: 60px;
     height: 60px;
     background-color: var(--color-fondo-header);
