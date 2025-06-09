@@ -11,6 +11,7 @@ if(isset($_SESSION['id'])){
     <title>Foro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/foro.css">
 </head>
 <body>
     <?php include_once("header.php"); ?>
@@ -41,13 +42,13 @@ if(isset($_SESSION['id'])){
                                 echo    "<div id='card'>
                                             <div class='card-header'>
                                                 <div class='imagen-icon'>
-                                                    <img src='' alt='Imagen de perfil'>
+                                                    <img src='/assets/img/tipo-random.jpg' alt='Imagen de perfil'>
                                                 </div>
                                                 <h4>".$entrada->getTitulo()."</h4>
                                             </div>
                                             <p class='card-body'>".$entrada->getContenido()."</p>
                                             <div class='card-footer'>
-                                                <small>".$entrada."</small>
+                                                <small></small>
                                                 <small>".$entrada->getFecha()->format('d/m/Y H:i')."</small>
                                             </div>
                                         </div>";
@@ -58,7 +59,28 @@ if(isset($_SESSION['id'])){
                     ?>                    
                 </section>
                 <section id="tus-entradas" class>
-
+                <?php
+                        if(!empty($data['propias'])){
+                            foreach ($data['propias'] as $entrada) {
+                                $hora = $entrada->getFecha()->format('H:i');
+                                echo    "<div id='card'>
+                                            <div class='card-header'>
+                                                <div class='imagen-icon'>
+                                                    <img src='' alt='Imagen de perfil'>
+                                                </div>
+                                                <h4>".$entrada->getTitulo()."</h4>
+                                            </div>
+                                            <p class='card-body'>".$entrada->getContenido()."</p>
+                                            <div class='card-footer'>
+                                                <small></small>
+                                                <small>".$entrada->getFecha()->format('d/m/Y H:i')."</small>
+                                            </div>
+                                        </div>";
+                            }
+                        }else{
+                            echo "<h3>Aún no has creado ninguna entrada en el foro</h3>";
+                        }
+                    ?> 
                 </section>
             </section>
         </article>

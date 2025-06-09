@@ -9,13 +9,17 @@ class ForoController extends Controller{
         $data = [];
         $entradasPropias = [];
         $otrasEntradas = [];
-        $data['entradas'] = EntradaModel::getAll();
-        foreach ($data['entradas'] as $entrada) {
-            if ($entrada->getId_creador()==$_SESSION['id']) {
-                $entradasPropias[] = $entrada;
-            }else{
-                $otrasEntradas[] = $entrada;
+        $entradas = EntradaModel::getAll();
+        if(isset($_SESSION['id'])){
+            foreach ($entradas as $entrada) {
+                if ($entrada->getId_creador()==$_SESSION['id']) {
+                    $entradasPropias[] = $entrada;
+                }else{
+                    $otrasEntradas[] = $entrada;
+                }
             }
+        }else{
+            $otrasEntradas = $entradas;
         }
 
         $data = [
