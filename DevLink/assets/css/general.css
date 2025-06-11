@@ -67,7 +67,7 @@ img{
 }
 
 .boton:active{
-    background-color: rgb(182, 234, 236);
+    background-color: rgb(252, 252, 252);
 }
 /*=============================================
 =            Estilos de cabecera            =
@@ -141,6 +141,10 @@ nav.nav-menu ul{
     justify-content: center;
     align-items: center;
     gap: .5rem;
+}
+
+li a:not(a.boton){
+    font-size: 1.5rem;
 }
 
 nav.nav-menu ul li:not(li:last-of-type){
