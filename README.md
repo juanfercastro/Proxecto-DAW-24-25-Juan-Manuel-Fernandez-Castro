@@ -57,6 +57,8 @@ Se usará html, css y javascript con react en el frontend de la web y en el back
 
 [Explicación sobre las formas jurídicas.](https://www.stelorder.com/blog/forma-juridica/)
 >
+[Diferencias entre autonomo y SL](https://www.managementpoint.es/6-diferencias-entre-ser-autonomo-o-sociedad-limitada/)
+>
 [Precio internet profesional](https://www.orange.es/empresas/tarifas/fibra)
 >
 [Precio Hosting](https://www.vultr.com/)

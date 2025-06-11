@@ -10,7 +10,7 @@
 
 ## 1- Descrición Xeral
 
-El proyecto consiste en el desarrollo de una página web llamada DevLink y que estará dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios y crear su propio portfolio con información sobre los proyectos en los que han formado parte y enlaces a su redes sociales, también se podrán unir empresas cuya actividad principal sea del mismo sector y podran publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
+El proyecto consiste en el desarrollo de una página web llamada DevLink y que estará dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios y crear su propio portfolio con información sobre los proyectos en los que han formado parte y enlaces a su redes sociales, también se podrán unir empresas cuya actividad principal sea del mismo sector y podrán publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
 Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos
 
 ## 2- Funcionalidades

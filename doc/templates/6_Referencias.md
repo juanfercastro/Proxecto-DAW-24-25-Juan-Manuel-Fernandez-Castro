@@ -15,7 +15,7 @@ Referencia para la landing page:
  - [lingoda](https://www.lingoda.com/es/)
  - [Youtube](https://www.youtube.com/premium?ybp=Sg0IBhIJdW5saW1pdGVk4AEC)
  - [FontAwesome](https://fontawesome.com/icons)
-
+>
 Referencia iconos login: [Codeanywhere](https://codeanywhere.com/signin)
 
 ## 3- Sitios oficiais do software utilizado

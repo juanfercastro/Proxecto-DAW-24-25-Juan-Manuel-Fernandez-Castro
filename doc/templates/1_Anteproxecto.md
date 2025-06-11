@@ -64,7 +64,7 @@ Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsq
 
 ### 2.6- Forma xurídica
 
-La forma jurídica de DevLink será autónoma ya que el proceso de constitución es simple y consta de pocas dificultades administrativas, además que los costes en inversiones serán menores debido a que la actividad se llevará a cabo en una vivienda la cual cuenta casi con todo el mobiliario y útiles necesarios para llevarla a cabo.
+La forma jurídica de DevLink será autónoma ya que, al compararla con otras formas jurídicas, los trámites a tener en cuenta son más sencillos y el darse de alta es más rápido, no es necesario el aportar un capital inicial al contrario que en una SL, la cuota de autónomos durante los primeros 12 meses se reduce, lo que ayuda a reducir aún mas los costes.
 
 ### 2.7- Investimentos
 
@@ -97,7 +97,9 @@ En lo referido al proceso productivo no existen impedimientos técnicos ya que l
 
 #### 2.8.2 - Viabilidade económica
 
-Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos. Por supuesto, no se percibirán ganancias en el primer año ni en el segundo, el proceso de dar a conocer la empresa para poder generar un ingreso que supere los costes durará al menos hasta el tercer año desde el lanzamiento de la aplicación.
+Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos.
+>
+Si nos basamos en los datos de esta noticia ([noticia sobre empleo tecnológico en españa](https://www.ituser.es/en-cifras/2024/09/la-programacion-informatica-supone-el-268-del-total-de-empleos-tic)) y suponiendo que la tasa de crecimiento empleos del sector tecnológico aumenta cada año un poco más podemos deducir que seguramente a partir del tercer año se comenzarán a percibir beneficios estables con esta aplicación, todo esto teniendo en cuenta lo que se tardará en dar a conocer la aplicacion mediante publicidad o el "boca a boca".
 
 #### 2.8.3- Conclusión
 
