@@ -38,10 +38,6 @@ h2{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.text-desktop{
-    display: none;
-}
-
 img{
     height: 100%;
     width: 100%;
@@ -67,7 +63,7 @@ img{
 }
 
 .boton:active{
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(182, 234, 236);
 }
 /*=============================================
 =            Estilos de cabecera            =
@@ -141,10 +137,6 @@ nav.nav-menu ul{
     justify-content: center;
     align-items: center;
     gap: .5rem;
-}
-
-li a:not(a.boton){
-    font-size: 1.5rem;
 }
 
 nav.nav-menu ul li:not(li:last-of-type){
@@ -332,7 +324,7 @@ color: var(--hover-redes);
     nav ul li:last-of-type{
         display: block;
     }
-    
+
     .features-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -348,3 +340,5 @@ color: var(--hover-redes);
         display: block;
     }
 }
+
+/*=====  End of Media querys  ======*/

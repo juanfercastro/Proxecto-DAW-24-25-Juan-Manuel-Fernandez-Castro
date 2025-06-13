@@ -30,16 +30,16 @@ if(isset($_SESSION['id'])){
                 </div>
             </section>
             <section class="foro-datatable">
-                <ul class="tabs">
+                <ul>
                     <li>Últimas conversaciones</li>
                     <li>Tus conversaciones</li>
                 </ul>
-                <section id="otras-entradas" class="cards active">
+                <section id="otras-entradas" class="cards">
                     <?php
                         if(!empty($data['otras'])){
                             foreach ($data['otras'] as $entrada) {
                                 $hora = $entrada->getFecha()->format('H:i');
-                                echo    "<div id='entrada'>
+                                echo    "<div id='card'>
                                             <div class='card-header'>
                                                 <div class='imagen-icon'>
                                                     <img src='/assets/img/tipo-random.jpg' alt='Imagen de perfil'>
@@ -49,7 +49,7 @@ if(isset($_SESSION['id'])){
                                             <p class='card-body'>".$entrada->getContenido()."</p>
                                             <div class='card-footer'>
                                                 <small></small>
-                                                <small>".$entrada->getFecha()->format('d/m/Y H:i')."</small>
+                                                <small><i class='fa-solid fa-calendar-days'></i> ".$entrada->getFecha()->format('d/m/Y')."  <i class='fa-solid fa-clock'></i>".$entrada->getFecha()->format('H:i')."</small>
                                             </div>
                                         </div>";
                             }
