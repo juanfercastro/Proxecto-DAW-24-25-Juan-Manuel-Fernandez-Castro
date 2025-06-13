@@ -70,7 +70,7 @@ La forma jurídica de DevLink será autónoma ya que, al compararla con otras fo
 
 ### 2.7- Investimentos
 
-#### 2.7.1- Custos
+#### 2.7.1- Costes
 - Costes fijos: 
     - Cuota de autónomo: 0€ hasta final de 2025 en Galicia. Después 80€ mensuales 
     - Hosting en Vultr: 28€/mes
