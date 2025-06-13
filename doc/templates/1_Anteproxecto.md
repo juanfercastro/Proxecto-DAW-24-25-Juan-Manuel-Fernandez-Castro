@@ -31,13 +31,13 @@ Las tecnologías que se usaran para este proyecto serán: en el frontend HTML5, 
 
 ### 2.1- Idea de negocio
 
-- Producto central: la principal finalidad de esta idea es el ayudar a las personas del sector de la programación en la búsqueda de empleo, a formar nuevas relaciones profesionales y a buscar ayuda relacionada con el desarrollo, todo en una sola web.
+- Producto central: el producto central es una web de búsqueda de empleo centrada en el sector de la programación y las tecnologías.
 - Valor añadido: posibilidad de creacion de usuario premium, que omitirá la publicidad, además de permitir aplicar filtros en la búsqueda de ofertas de empleo, entre otros beneficios.
-- Utilidad: poder buscar o publicar ofertas de empleo, ampliacion de contactos relacionados con el sector y poder ayudar o pedir ayuda en el foro.
+- Utilidad: ampliación de contactos relacionados con el sector y poder ayudar o pedir ayuda en el foro.
 
 ### 2.2- Xustificación da idea
 
-Las necesidades que se cubren con DevLink son la búsqueda de empleo activa, formación de relaciones profesionales y búsqueda de ayuda en el foro en un sector en el que cada vez se forman mas personas y cada vez hacen falta mas profesionales cualificados. En la busqueda de empleo ya existen aplicaciones que cubren esa necesidad, tales como LinkedIn, sin embargo, como esta idea está completamente orientada a un sector, resulta mucho mas sencillo el encontrar ofertas que se adecuen a los estándares de los usuarios.
+Actualmente, el sector de la programación se encuentra en constante crecimiento, generando cada vez una mayor demanda de profesionales cualificados. La parte negativa en todo esto es que los métodos de búsqueda de empleo están poco especializados, lo cuál conlleva ineficiencia y el tener que tardar más tiempo del necesario en encontrar un puesto que se adecue a nuestras necesidades. A partir de esta necesidad se creó DevLink: una web centrada exclusivamente en programadores, que actúa como puente entre profesionales y empresas.
 >
 Tal como se puede ver en esta grafica del INE, el sector de la programacion y desarrollo tiene una gran cantidad de actividad
 ![Estadistica](/doc/img/INE.png)
@@ -53,7 +53,9 @@ Los usuarios serán todas las personas físicas que usen la aplicacion y los cli
 
 ### 2.4- Competencia
 
-Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsqueda de empleo tales como LinkedIn o Infojobs, asi como redes sociales que sirven como foro, por ejemplo Stack Overflow o Reddit (en el caso de Reddit existen comunidades o "subreddits" creados para colaboracion entre desarrolladores)
+Como competencia con esta idea estarían otras aplicaciones dedicadas a la búsqueda de empleo tales como LinkedIn o Infojobs, asi como redes sociales que sirven como foro, por ejemplo Stack Overflow o Reddit (en el caso de Reddit existen comunidades o "subreddits" creados para colaboracion entre desarrolladores).
+>
+En lo referido a motores de búsqueda de empleo está dominado por plataformas como LinkedIn o InfoJobs, siendo la primera tomada como punto de referncia tanto para buscar empleo como mostrar experiencia y la segunda estando más enfocada en la búsqueda de ofertas que en la creación de un perfil profesional. Estos competidores están más centrados en la orientación, por ejemplo en el caso de infojobs estando centrado en la búsqueda tradicional de empleo en lugar del posicionamiento profesional. Los otros motores de empleo también incluyen en sus ofertas una mayor visibilidad del usuario y servicios de pago exclusivos.
 
 ### 2.5- Proposta de valor
 
@@ -70,21 +72,22 @@ La forma jurídica de DevLink será autónoma ya que, al compararla con otras fo
 
 #### 2.7.1- Custos
 - Costes fijos: 
-    - Cuota de autónomo: 80€ mensuales 
+    - Cuota de autónomo: 0€ hasta final de 2025 en Galicia. Después 80€ mensuales 
     - Hosting en Vultr: 28€/mes
     - Tarifa de internet profesional: 30€/mes
     - Asesoría fiscal(para apoyo con el papeleo de autónomo): 30€/mes
     - Proteccion de datos: 120 - 180€
+    - Nómina mensual(incluyendo pagas extra y cotizacion) - 1800€
 - Costes varibales:
     - IRPF: 15% - 20% sobre beneficio
-    - Mobiliario de oficina, suministros y equipos informáticos: 300 - 500€
-    - Publicidad: 200€/mes (en redes sociales el precio puede variar antre 0.5€ a 1.5€ por tick)
+    - Publicidad: en redes sociales el precio puede variar antre 0.5€ a 1.5€ por tick
     - Luz y agua (deducibles)
-
+- Inversiones:
+    - Mobiliario de oficina, suministros y equipos informáticos: 300 - 500€ 
 
 #### 2.7.2- Ingresos
 
-- Creacion de usuarios premium: 25.00€/mes
+- Creacion de usuarios premium(programadores y empresas): 25.00€/mes
 - Publicidad: 1-5€ por 1000 anuncios
 
 ### 2.8- Viabilidade
@@ -99,7 +102,10 @@ En lo referido al proceso productivo no existen impedimientos técnicos ya que l
 
 Las principales fuentes de ingresos en DevLink son dos: la posibilidad de que un usuario cree una cuenta premium y la visualización de anuncios en la web para usuarios no premium, si optamos por que la web tenga un tráfico moderado (50000 visualizaciones de anuncios y 20 usuarios premium aproximadamente), se puede deducir que es viable económicamente ya que los ingresos superan los gastos (por poco) mensualmente hablando. También se pueden recurrir a ayudas o subvenciones públicas para nuevos autónomos para aumentar un poco los ingresos.
 >
-Si nos basamos en los datos de esta noticia ([noticia sobre empleo tecnológico en españa](https://www.ituser.es/en-cifras/2024/09/la-programacion-informatica-supone-el-268-del-total-de-empleos-tic)) y suponiendo que la tasa de crecimiento empleos del sector tecnológico aumenta cada año un poco más podemos deducir que seguramente a partir del tercer año se comenzarán a percibir beneficios estables con esta aplicación, todo esto teniendo en cuenta lo que se tardará en dar a conocer la aplicacion mediante publicidad o el "boca a boca".
+Teniendo en cuenta los costes mencionados anteriormente, que la principal fuente de ingresos de DevLink será el registro de usuarios de pago, que de los usuarios totales solo son un pequeño porcentaje (5-10%) los que suelen mejorar su usario (hablando generalmente) y que la primera publicidad de la web se hará a través de facebook, ya que es una de las redes sociales mas transitadas con un intervalo de edades muy amplio, el objetivo de usuarios a cumplir sería de un total de 300, lo ideal sería que estuvieran formados en un ratio de 80% programadores - 20% empresas aproximadamente, ya que de esos por regla general serian entre 20 - 30 los usuarios que usarian los servicios de pago, que a 25€ mensuales por usuario se traducirían en un ingreso de entre 450 - 750 € cada mes, cubriendo ya todos los costes.
+>
+Usando todos los datos expuestos anteriormente y si nos basamos en los datos de esta noticia ([noticia sobre empleo tecnológico en españa](https://www.ituser.es/en-cifras/2024/09/la-programacion-informatica-supone-el-268-del-total-de-empleos-tic)) y suponiendo que la tasa de crecimiento empleos del sector tecnológico aumenta cada año un poco más podemos deducir que seguramente entre el segundo y el tercer año desde el lanzamiento de la web se comenzarán a percibir beneficios estables con esta aplicación, todo esto teniendo en cuenta lo que se tardará en dar a conocer la aplicacion mediante publicidad o el "boca a boca".
+
 
 #### 2.8.3- Conclusión
 

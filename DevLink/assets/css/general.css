@@ -332,10 +332,6 @@ color: var(--hover-redes);
     nav ul li:last-of-type{
         display: block;
     }
-
-    .header-title{
-        display: block;
-    }
     
     .features-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -348,7 +344,7 @@ color: var(--hover-redes);
 }
 
 @media screen and (min-width:850px) {
-    .text-desktop{
+    .header-title{
         display: block;
     }
 }

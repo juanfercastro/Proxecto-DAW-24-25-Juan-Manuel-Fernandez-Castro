@@ -1,22 +1,25 @@
 .article-cards {
-width: 80%;
+width: 90%;
 }
 
 .cards {
-display: flex;
-flex-direction: column;
-gap: 16px;
-margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 24px;
 }
 
-#card {
-background-color: white;
-border-radius: 12px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-padding: 16px;
-display: flex;
-flex-direction: column;
-gap: 12px;
+#entrada {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .card-header {
