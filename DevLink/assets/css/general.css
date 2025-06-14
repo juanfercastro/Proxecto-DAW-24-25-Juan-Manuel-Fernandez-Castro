@@ -165,7 +165,7 @@ nav ul li:last-of-type{
 =            cards          =
 =============================================*/
 .article-cards{
-    max-width: 90%;
+    width: 90%;
     margin: 1rem auto;
     background-color: white;
     border-radius: var(--border-radius);
@@ -323,6 +323,11 @@ color: var(--hover-redes);
 
     nav ul li:last-of-type{
         display: block;
+    }
+
+    .article-cards{
+        width: 100%;
+        margin: 0;
     }
 
     .features-grid {
