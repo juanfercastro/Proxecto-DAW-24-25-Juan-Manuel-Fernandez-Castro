@@ -1,62 +1,119 @@
-.article-cards {
-    width: 90%;
+.cards-title h1 {
+    text-align: center;
+    color: var(--color-active);
+    margin-top: 10px;
 }
 
-h1:not(header h1) {
-    text-align: center;
-    color: #1a237e;
-    margin-bottom: 20px;
+.cards-title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-icon i{
+    top: 6px;
+    left: 7px;
+}
+
+.cards-title div input{
+    border-radius: 5px;
+    border: 1px solid black;
 }
     
+.foro-datatable{
+    margin-top: 20px;
+}
+
 .cards {
-    margin: 1rem auto;
-    width: 90%;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     gap: .75rem;
 }
     
-    #card {
+#card {
     background-color: white;
-    border-radius: 12px;
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    }
+}
 
-    #card:hover{
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    }
+#card:nth-child(odd){
+    background-color: #e2edff;
+}
+
+#card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
     
-    .card-header {
+.card-header {
     display: flex;
     align-items: center;
     gap: 16px;
-    }
+}
+
+.tabs {
+    list-style: none;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    padding: 0 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.tab:hover{
+    color: var(--color-active);
+}
+
+.tab.active{
+    color: var(--color-active);
+    border-bottom: 2px solid var(--color-active);
+}
     
-    .card-header .imagen-icon img {
+.card-header .imagen-icon img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    }
+}
     
-    .card-header h4 {
+.card-header h4 {
     margin: 0;
     font-size: 1.2rem;
     flex-grow: 1;
-    }
+}
+
+
     
-    .card-body {
+.card-body {
     font-size: 1rem;
     color: #333;
-    }
+}
     
-    .card-footer {
+.card-footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
     color: #666;
+}
+
+@media screen and (min-width:720px) {
+    .cards{
+        margin: 1rem auto;
+        width: 90%;
     }
-      
+
+    #card{
+        border-radius: 10px;
+    }
+}
+    

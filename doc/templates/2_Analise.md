@@ -11,7 +11,7 @@
 ## 1- Descrición Xeral
 
 El proyecto consiste en el desarrollo de una página web llamada DevLink y que estará dedicada por completo al sector de la programación, en ella las personas de dicho sector podrán crear usuarios y crear su propio portfolio con información sobre los proyectos en los que han formado parte y enlaces a su redes sociales, también se podrán unir empresas cuya actividad principal sea del mismo sector y podrán publicar ofertas de empleo. La página dispondra tambien de un foro a disposicion de los usuarios con el fin de interactuar y ayudarse en sus proyectos.
-Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos
+Se usará html, css y javascript con react en el frontend de la web y en el backend php con un framework (laravel) para facilitar el uso de bases de datos.
 
 ## 2- Funcionalidades
 
@@ -46,6 +46,7 @@ Al ser una web con el mayor parecido a una red social lo único requerido para q
 
 DevLink, al ser una red social para programadores y empresas a nivel nacional, debe cumplir con la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673) así como con el [Real Decreto-ley 12/2018, de 7 de septiembre, de seguridad de las redes y sistemas de información](https://www.boe.es/buscar/act.php?id=BOE-A-2018-12257) y la [Resolución de 11 de mayo de 2023, de la Agencia Española de Protección de Datos, por la que se aprueban las bases reguladoras y se convoca el Premio a la Difusión del Derecho Fundamental a la Protección de Datos en Redes sociales.](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-12049).
 >
+La información sobre las cookies yt la política de Privacidad estarán a disposicion del usuario cuando entran en la página por primera vez (si no estan aceptadas saldrá cada vez que entre) en un elemento fijo en la parte de abajo de la ventana y en el formulario de registro (es obligatorio aceptar la política de privacidad para poder crear un usuario) respectivamente. El responsable sobre ambas políticas será la propia empresa DevLink.
 
 ## 6- Melloras futuras
 

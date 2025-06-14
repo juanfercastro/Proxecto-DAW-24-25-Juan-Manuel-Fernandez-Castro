@@ -18,21 +18,21 @@ if(isset($_SESSION['id'])){
     <main>
         <article class="article-cards">
             <section class="cards-title">
-                <h1>Bienvenido al Foro</h1>
-                <p>Conecta, aprende y ayuda a otros desarrolladores</p>
-                <div style="margin-top: 16px;">
-                    <button class="btn" style="background: white; color: var(--primary-blue); margin-right: 12px;" onclick="toggleNewPost()">
-                        <i class="fas fa-plus"></i> Nueva Charla
-                    </button>
-                    <button class="btn btn-outline" style="color: white; border-color: white;">
-                        <i class="fas fa-search"></i> Buscar
+                <h1>Conecta, aprende y ayuda a otros desarrolladores</h1>
+                <div>
+                    <div class="space-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="form-control icon-input" id="buscar-entrada" placeholder="Busca entradas...">
+                    </div>
+                    <button class="boton">
+                        <i class="fas fa-plus"></i> <span>Nueva Charla</span>
                     </button>
                 </div>
             </section>
             <section class="foro-datatable">
-                <ul>
-                    <li>Últimas conversaciones</li>
-                    <li>Tus conversaciones</li>
+                <ul class="tabs">
+                    <li id="newest" class="tab active">Últimas conversaciones</li>
+                    <li id="own" class="tab">Tus conversaciones</li>
                 </ul>
                 <section id="otras-entradas" class="cards">
                     <?php

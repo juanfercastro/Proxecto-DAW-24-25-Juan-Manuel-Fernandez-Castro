@@ -8,6 +8,7 @@
     --color-fondo-oscuro: #0066ff;
     --color-fondo-claro:#d4f9ff;
     --color-fondo-header:#090760;
+    --color-active:#1a237e;
     --color-fondo-footer: rgba(22, 19, 59, 0.895);
     --hover-redes: #599cff;
     --bg-btn: rgb(141 227 233);
@@ -158,21 +159,50 @@ nav ul li:last-of-type{
     display: none;
 }
 
+span{
+    display: none;
+}
+
 /*=====  End of Estilos de cabecera  ======*/
+
+
+/*=============================================
+=            estilos formularios            =
+=============================================*/
+
+input.icon-input{
+    padding: .5rem 2rem;
+}
+
+div.space-icon{
+    position: relative;
+}
+
+/*posicionamiento de los iconos en los input*/
+.space-icon i{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: gray;
+}
+
+/*=====  End of estilos formularios  ======*/
+
 
 
 /*=============================================
 =            cards          =
 =============================================*/
 .article-cards{
-    width: 90%;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
     background-color: white;
-    border-radius: var(--border-radius);
     text-align: center;
 }
 
 .cards-title{
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,8 +356,13 @@ color: var(--hover-redes);
     }
 
     .article-cards{
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 1rem auto;
+        border-radius: var(--border-radius);
+    }
+
+    .cards-title{
+        padding-top: 0;
     }
 
     .features-grid {
@@ -338,6 +373,9 @@ color: var(--hover-redes);
         flex-direction: row;
     }
       
+    span{
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width:850px) {

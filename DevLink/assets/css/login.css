@@ -34,16 +34,8 @@ a{
     max-width: 200px;
 }
 
-.space-icon{
-    position: relative;
-}
-
 .form-control{
     margin-bottom: 15px;
-}
-
-.icon-input{
-    padding: .5rem 2rem;
 }
 
 .card a{
@@ -52,15 +44,6 @@ a{
 
 /*=====  End of cambios generales para estetica  ======*/
 
-
-
-/*posicionamiento de los iconos en los input*/
-i{
-    position: absolute;
-    top: 13px;
-    left: 10px;
-    color: gray;
-}
 
 /* devolver el icono de la flecha al select */
 select.form-control{

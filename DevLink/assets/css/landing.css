@@ -3,10 +3,10 @@ main > article {
 }
 
 article.doscolumn{
-    max-width: 90%;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
     background: linear-gradient(135deg, #004093 0%, #244f91 100%);
-    border-radius: var(--border-radius);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     align-items: center;
@@ -14,6 +14,7 @@ article.doscolumn{
 }
 
 .doscolumn .doscolumn-text{
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,4 +32,17 @@ article.doscolumn{
     overflow: hidden;
     box-shadow: 4px 4px 10px black;
     max-width: 580px;
+}
+
+/* media query */
+@media screen and (min-width:720px){
+    article.doscolumn{
+        max-width: 90%;
+        margin: 1rem auto;
+        border-radius: var(--border-radius);
+    }
+
+    .doscolumn .doscolumn-text{
+        padding-top: 0;
+    }
 }
