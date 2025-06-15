@@ -94,48 +94,15 @@
                         </div>
                         <p class='card-body'>Queremos alguien a mano que sepa ordenar papeles, rellenar excel y que nos arregle las impresoras si es que dejan de funcionar.</p>
                         <div class='card-footer'>
-                            <small>Indalsu SL</small>
+                            <small>Indaslu SL</small>
                             <small><i class='fa-solid fa-calendar-days'></i> 20/03/2025 <i class='fa-solid fa-clock'></i>15:45</small>
                         </div>
                     </div>
                 </section>
             </section>
         </article>
-        <dialog id="addEntrada">
-            <button onclick="window.addEntrada.close()" class="dialog__btn--cerrar"><i class="fa-solid fa-xmark"></i></button>
-            <form id="nuevaEntrada" method="post">
-                <input type="hidden" name="id_creador" id="id_creador" value="<?= $id_usuario ?>">
-                <div>
-                    <label for="titulo">Titulo de la entrada</label>
-                    <input type="text" name="titulo" id="titulo" placeholder="No se hacer paginación en php...">
-                </div>
-                <div>
-                    <label for="contenido">Contenido de la entrada</label>
-                    <textarea name="contenido" id="contenido" placeholder="Necesito ayuda con..."></textarea>
-                </div>
-                <input type="submit" class="boton" value="Crear Entrada">
-            </form>
-        </dialog>
-        <dialog id="editEntrada">
-            <button onclick="window.editEntrada.close()" class="dialog__btn--cerrar"><i class="fa-solid fa-xmark"></i></button>
-            <form id="modificarEntrada" method="post">
-                <input type="hidden" name="id_entrada" id="id_entrada" value="">
-                <input type="hidden" name="id_creador" id="edit_id_creador" value="">
-                <div>
-                    <label for="edit_titulo">Titulo de la entrada</label>
-                    <input type="text" name="titulo" id="edit_titulo" placeholder="No se hacer paginación en php...">
-                </div>
-                <div>
-                    <label for="edit_contenido">Contenido de la entrada</label>
-                    <textarea name="contenido" id="edit_contenido" placeholder="Necesito ayuda con..."></textarea>
-                </div>
-                <input type="submit" class="boton" value="Modificar Entrada">
-            </form>
-        </dialog>
     </main>
     <?php include_once("footer.php"); ?>
     <script src="/assets/js/header.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/foro.js"></script>
 </body>
 </html>
