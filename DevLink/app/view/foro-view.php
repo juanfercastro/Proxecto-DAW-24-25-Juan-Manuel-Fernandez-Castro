@@ -2,6 +2,7 @@
 if(isset($_SESSION['id'])){
     $id_usuario = $_SESSION['id'];
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,17 @@ if(isset($_SESSION['id'])){
                     ?>
                 </div>
             </section>
+            <?php
+                if(isset($data['errores'])){
+                    $errores = explode(",", $data['errores']);
+                    echo "<section id='errores'><ul>";
+                    foreach ($errores as $error) {
+                        echo "<li>".$error."</li>";
+                    }
+                    echo "</ul></section>";
+                }
+                ?>
+
             <section class="foro-datatable">
                 <ul class="tabs">
                     <li id="newest" class="tab active">Últimas conversaciones</li>
@@ -78,11 +90,19 @@ if(isset($_SESSION['id'])){
                                                     <img src='/assets/img/tipo-random.jpg' alt='Imagen de perfil'>
                                                 </div>
                                                 <h4>".$entrada->getTitulo()."</h4>
+                                                <div id='opciones'>
+                                                    <button class='boton btn-editar' data-id='".$entrada->getId_entrada()."'  onclick='window.editEntrada.showModal()'>
+                                                        <i class='fa-solid fa-pen-to-square'></i>
+                                                    </button>
+                                                    <button class='boton btn-eliminar' data-id='".$entrada->getId_entrada()."'>
+                                                        <i class='fa-solid fa-trash'></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <p class='card-body'>".$entrada->getContenido()."</p>
                                             <div class='card-footer'>
                                                 <small></small>
-                                                <small>".$entrada->getFecha()->format('d/m/Y H:i')."</small>
+                                                <small><i class='fa-solid fa-calendar-days'></i> ".$entrada->getFecha()->format('d/m/Y')."  <i class='fa-solid fa-clock'></i>".$entrada->getFecha()->format('H:i')."</small>
                                             </div>
                                         </div>";
                             }
@@ -96,7 +116,7 @@ if(isset($_SESSION['id'])){
         </article>
         <dialog id="addEntrada">
             <button onclick="window.addEntrada.close()" class="dialog__btn--cerrar"><i class="fa-solid fa-xmark"></i></button>
-            <form action="?controller=ForoController&action=addEntrada" method="post">
+            <form id="nuevaEntrada" method="post">
                 <input type="hidden" name="id_creador" id="id_creador" value="<?= $id_usuario ?>">
                 <div>
                     <label for="titulo">Titulo de la entrada</label>
@@ -104,9 +124,25 @@ if(isset($_SESSION['id'])){
                 </div>
                 <div>
                     <label for="contenido">Contenido de la entrada</label>
-                    <textarea name="contenido" id="contenidop" placeholder="Necesito ayuda con..."></textarea>
+                    <textarea name="contenido" id="contenido" placeholder="Necesito ayuda con..."></textarea>
                 </div>
-                <input type="submit" class="boton" value="Crear Entrada"></input>
+                <input type="submit" class="boton" value="Crear Entrada">
+            </form>
+        </dialog>
+        <dialog id="editEntrada">
+            <button onclick="window.editEntrada.close()" class="dialog__btn--cerrar"><i class="fa-solid fa-xmark"></i></button>
+            <form id="modificarEntrada" method="post">
+                <input type="hidden" name="id_entrada" id="id_entrada" value="">
+                <input type="hidden" name="id_creador" id="edit_id_creador" value="">
+                <div>
+                    <label for="edit_titulo">Titulo de la entrada</label>
+                    <input type="text" name="titulo" id="edit_titulo" placeholder="No se hacer paginación en php...">
+                </div>
+                <div>
+                    <label for="edit_contenido">Contenido de la entrada</label>
+                    <textarea name="contenido" id="edit_contenido" placeholder="Necesito ayuda con..."></textarea>
+                </div>
+                <input type="submit" class="boton" value="Modificar Entrada">
             </form>
         </dialog>
     </main>

@@ -144,6 +144,28 @@ class EntradaModel{
         return $entradas;
     }
 
+    public static function getEntrada($id){
+        $entrada = [];
+        $pdo = Conexion::connection();
+        $sql = "SELECT id_entrada, id_creador, titulo, contenido FROM entradas WHERE id_entrada = ?";
+        try {
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindParam(1, $id, PDO::PARAM_INT);
+            $stmt->execute();
+            if($stmt->rowCount()!=0){
+                $entrada = $stmt->fetch(PDO::FETCH_ASSOC);
+            }
+        } catch (PDOException $th) {
+            error_log("Error al obtener los datos de la entrada ".$th->getMessage());
+            $entrada = null;
+        }finally{
+            $pdo = null;
+            $stmt = null;
+        }
+
+        return $entrada;
+    }
+
     public static function addEntrada(Entrada $e){
         $resultado = false;
         $pdo = Conexion::connection();
@@ -156,6 +178,45 @@ class EntradaModel{
             $resultado = $stmt->execute();
         } catch (PDOException $th) {
             error_log("Error insertando la nueva entrada ".$th->getMessage());
+            $resultado = false;
+        }finally {
+            $pdo = null;
+            $stmt = null;
+        }
+        return $resultado;
+    }
+
+    public static function updateEntrada(Entrada $e){
+        $resultado = false;
+        $pdo = Conexion::connection();
+        $sql = "UPDATE entradas SET titulo = ?, contenido = ? WHERE id_entrada = ? AND id_creador = ?";
+        try {
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindValue(1, $e->getTitulo(), PDO::PARAM_STR);
+            $stmt->bindValue(2, $e->getContenido(), PDO::PARAM_STR);
+            $stmt->bindValue(3, $e->getId_entrada(), PDO::PARAM_INT);
+            $stmt->bindValue(4, $e->getId_creador(), PDO::PARAM_INT);
+            $resultado = $stmt->execute();
+        } catch (PDOException $th) {
+            error_log("Error actualizando ".$th->getMessage());
+            $resultado = false;
+        }finally {
+            $pdo = null;
+            $stmt = null;
+        }
+        return $resultado;
+    }
+
+    public static function deleteEntrada($id){
+        $resultado = false;
+        $pdo = Conexion::connection();
+        $sql = "DELETE FROM entradas WHERE id_entrada = ?";
+        try {
+            $stmt = $pdo->prepare($sql);
+            $stmt->bindValue(1, $id, PDO::PARAM_INT);
+            $resultado = $stmt->execute();
+        } catch (PDOException $th) {
+            error_log("Error eliminando la entrada ".$th->getMessage());
             $resultado = false;
         }finally {
             $pdo = null;

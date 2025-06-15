@@ -17,11 +17,14 @@ Referencia para la landing page:
  - [FontAwesome](https://fontawesome.com/icons)
 >
 Referencia iconos login: [Codeanywhere](https://codeanywhere.com/signin)
-
-## 3- Sitios oficiais do software utilizado
+>
 Iconos: [Fontawesome](https://fontawesome.com/icons)
 >
 Imagenes: [Unsplash](https://unsplash.com/es)
+## 3- Sitios oficiais do software utilizado
+[Bootstrap para formulario](https://getbootstrap.com/docs/5.3/forms/overview/)
+>
+[jQuery para AJAX y filtro](https://jquery.com/)
 
 ## 4- Normas ou documentos legais
 

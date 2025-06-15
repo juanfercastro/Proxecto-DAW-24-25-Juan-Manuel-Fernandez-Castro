@@ -34,6 +34,13 @@ main{
     justify-content: space-evenly;
 }
 
+h1:not(header h1) {
+    font-size: var(--size-h1);
+    text-align: center;
+    color: var(--color-active);
+    margin-top: 10px;
+}
+
 h2{
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -46,7 +53,7 @@ img{
 }
 
 .boton{
-    padding: .5rem 1rem;
+    padding: .5rem .5rem;
     margin: .5rem;
     border: 2px solid;
     border-radius: var(--border-radius);
@@ -165,6 +172,16 @@ span{
     display: none;
 }
 
+#errores ul{
+    padding-left: 0;
+    text-align: center;
+}
+
+#errores ul li{
+    list-style: none;
+    color: red;
+}
+
 /*=====  End of Estilos de cabecera  ======*/
 
 
@@ -190,6 +207,48 @@ div.space-icon{
 
 /*=====  End of estilos formularios  ======*/
 
+
+/*=============================================
+=            estilos de las modales            =
+=============================================*/
+
+dialog {
+    min-width: 70%;
+    padding: 1.5rem;
+    border: 0;
+    border-bottom-left-radius:var(--border-radius);
+    border-bottom-right-radius:var(--border-radius);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    animation: modal 0.5s ease-in-out;
+    -o-animation: modal 0.5s ease-in-out;
+    -moz-animation: modal 0.5s ease-in-out;
+    -webkit-animation: modal 0.5s ease-in-out;
+}
+
+dialog::backdrop{
+    background-color: #6a8dff6a;
+}
+
+dialog form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+dialog button{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 1.5em;
+    border: none;
+    background-color: #fafafa;
+}
+
+/*=====  End of estilos de las modales  ======*/
 
 
 /*=============================================
@@ -261,26 +320,6 @@ form{
 }
 
 /*=====  End of Formularios  ======*/
-
-
-
-/*=============================================
-=            Estilos de la modal            =
-=============================================*/
-
-dialog{
-    padding: 1rem 2rem;
-    border: none;
-    background-color: #fafafa;
-    margin: 0 auto;
-    position: relative;
-    top: 10%;
-    max-height: 90vh;
-}
-
-/*=====  End of Estilos de la modal  ======*/
-
-
 
 
 /*=============================================
@@ -387,3 +426,14 @@ color: var(--hover-redes);
 }
 
 /*=====  End of Media querys  ======*/
+
+/*animacion de la modal*/
+@keyframes modal {
+    from{
+      top: -50vw;
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}

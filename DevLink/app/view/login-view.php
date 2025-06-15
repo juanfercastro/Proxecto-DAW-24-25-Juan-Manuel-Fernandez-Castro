@@ -19,11 +19,11 @@
                 <?php
                     if(isset($data['errores'])){
                         $errores = explode(",", $data['errores']);
-                        echo "<ul>";
+                        echo "<section id='errores'><ul>";
                         foreach ($errores as $error) {
                             echo "<li>".$error."</li>";
                         }
-                        echo "</ul>";
+                        echo "</ul></section>";
                     }
                 ?>
 

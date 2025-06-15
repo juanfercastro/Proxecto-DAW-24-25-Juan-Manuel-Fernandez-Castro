@@ -11,7 +11,8 @@ CREATE TABLE usuarios(
     apellidos VARCHAR(100),
     email VARCHAR(100) UNIQUE NOT NULL,
     contrasena VARCHAR(30) NOT NULL,
-    tipo_usuario ENUM('developer','empresa','admin') DEFAULT 'developer'
+    tipo_usuario ENUM('developer','empresa','admin') DEFAULT 'developer',
+    premium tinyint(1) DEFAULT 0
 );
 
 -- Creación de la tabla Portfolio 
