@@ -34,17 +34,6 @@ if(isset($_SESSION['id'])){
                     ?>
                 </div>
             </section>
-            <?php
-                if(isset($data['errores'])){
-                    $errores = explode(",", $data['errores']);
-                    echo "<section id='errores'><ul>";
-                    foreach ($errores as $error) {
-                        echo "<li>".$error."</li>";
-                    }
-                    echo "</ul></section>";
-                }
-                ?>
-
             <section class="foro-datatable">
                 <ul class="tabs">
                     <li id="newest" class="tab active">Últimas conversaciones</li>

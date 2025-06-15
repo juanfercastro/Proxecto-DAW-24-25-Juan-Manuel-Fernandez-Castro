@@ -25,6 +25,15 @@ class UserController extends Controller{
         }
     }
 
+    public function showOfertas(){
+        if (!isset($_SESSION['nombre'])) {
+            $this->loginForm();
+        }else{
+            $this->view->show('ofertas');
+            exit;
+        }
+    }
+
     public function addUser(){
         $nombre = empty($_POST['nombre'])? null: $_POST['nombre'];
         $apellidos = empty($_POST['apellidos'])? null: $_POST['apellidos'];

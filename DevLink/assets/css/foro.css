@@ -1,3 +1,7 @@
+h1:not(header h1) {
+    font-size: 1.8rem;
+}
+
 .article-cards{
     height: 100%;
 }

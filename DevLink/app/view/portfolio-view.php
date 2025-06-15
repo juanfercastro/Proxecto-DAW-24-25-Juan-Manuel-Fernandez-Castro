@@ -50,31 +50,25 @@
                             </div>
                             <h3>E-commerce Platform</h3>
                             <p>Plataforma de comercio electrónico completa con carrito de compras, procesamiento de pagos y panel de administración.</p>
-                            <div>
                             <a href="#" class="boton">Ver Proyecto</a>
-                            </div>
                         </div>
 
-                        <div class="project-card card">
+                        <div class="card">
                             <div>
                                 <i class="fas fa-tasks"></i>
                             </div>
                             <h3>Task Manager</h3>
                             <p>Aplicación de gestión de tareas con funcionalidades colaborativas, notificaciones en tiempo real y reportes.</p>
-                            <div>
-                                <a href="#" class="boton">Ver Proyecto</a>
-                            </div>
+                            <a href="#" class="boton">Ver Proyecto</a>
                         </div>
 
-                        <div class="project-card card">
+                        <div class="card">
                             <div>
                                 <i class="fas fa-chart-line"></i>
                             </div>
                             <h3>Analytics Dashboard</h3>
                             <p>Dashboard de análisis con visualizaciones interactivas, filtros avanzados y exportación de datos.</p>
-                            <div>
                                 <a href="#" class="boton">Ver Proyecto</a>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -83,9 +77,14 @@
                 <section class="colaborar portfolio-section">
                     <h2>¿Interesado en colaborar?</h2>
                     <p>Estoy abierto a nuevas oportunidades y proyectos emocionantes.</p>
-                    <a href="mailto:jose@ejemplo.com" class="btn">
-                        <i class="fas fa-envelope"></i> Contactar
-                    </a>
+                    <div class="contacto">
+                        <a href="mailto:jose@ejemplo.com" class="btn">
+                            <i class="fas fa-envelope"></i> Mandar correo
+                        </a>
+                        <a href="tel:+34652457854" class="btn">
+                            <i class="fa-solid fa-phone"></i> Llamar
+                        </a>
+                    </div>
                 </section>
         </div>
         </article>
