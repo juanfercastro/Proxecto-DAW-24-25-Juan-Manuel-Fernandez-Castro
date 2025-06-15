@@ -25,7 +25,7 @@
         <?php if(isset($_SESSION['id'])){ ?>
           <li><a href="?controller=UserController&action=logout" class="boton">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a></li>
         <?php }else{ ?>
-          <li><a href="app/index.php?controller=UserController&action=loginForm" class="boton"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesion</a></li>
+          <li><a href="?controller=UserController&action=loginForm" class="boton"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesion</a></li>
         <?php } ?>
       </ul>
     </nav>
