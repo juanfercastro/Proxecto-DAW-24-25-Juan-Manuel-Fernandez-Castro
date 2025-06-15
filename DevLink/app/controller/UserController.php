@@ -41,42 +41,47 @@ class UserController extends Controller{
         $tipo = empty($_POST['tipo_user'])?null:$_POST['tipo_user'];
         $pass = empty($_POST['pass'])?null:$_POST['pass'];
         $pass2 = empty($_POST['pass2'])?null:$_POST['pass2'];
+        $politica = isset($_POST['pol_priv'])? 1 : 0;
 
         $errores = '';
-        if(!isset($nombre)){
-            $errores .= 'El nombre es obligatorio,';
-        }elseif(strlen($nombre)>150){
-            $errores .= 'Nombre es demasiado extenso,';
-        }
-        
-        if(isset($apellidos)){
-            if(strlen($apellidos)>100){
-                $errores .= 'Apellido demasiado extenso,';
+        if ($politica != 0) {
+            if(!isset($nombre)){
+                $errores .= 'El nombre es obligatorio,';
+            }elseif(strlen($nombre)>150){
+                $errores .= 'Nombre es demasiado extenso,';
             }
-        }
-
-        if(!isset($mail)){
-            $errores .= 'El correo electrónico es obligatorio,';
-        }elseif(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
-            $errores .= 'Formato del correo electrónico incorrecto,';
+            
+            if(isset($apellidos)){
+                if(strlen($apellidos)>100){
+                    $errores .= 'Apellido demasiado extenso,';
+                }
+            }
+    
+            if(!isset($mail)){
+                $errores .= 'El correo electrónico es obligatorio,';
+            }elseif(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
+                $errores .= 'Formato del correo electrónico incorrecto,';
+            }else{
+                $verificarCorreo = UserModel::getUser($mail);
+                if(isset($verificarCorreo)){
+                    $errores .= 'Ya existe una cuenta asignada a ese correo,';
+                }
+            }
+            
+            if(!isset($tipo)){
+                $errores .= 'Debe elegir su tipo de usuario,';
+            }
+            
+            $pattern = '/^(?=.*\d)[A-Za-z\d]{8,25}$/';
+            if(!preg_match($pattern, $pass)){
+                $errores .= 'La contraseña debe tener entre 8 y 25 caracteres y contener al menos 1 número,';
+            }elseif(!isset($pass) || !isset($pass2)){
+                $errores .= 'Deben rellenarse ambos campos de contraseña,';
+            }elseif($pass != $pass2){
+                $errores .= 'Las contraseñas no coinciden,';
+            }
         }else{
-            $verificarCorreo = UserModel::getUser($mail);
-            if(isset($verificarCorreo)){
-                $errores .= 'Ya existe una cuenta asignada a ese correo,';
-            }
-        }
-        
-        if(!isset($tipo)){
-            $errores .= 'Debe elegir su tipo de usuario,';
-        }
-        
-        $pattern = '/^(?=.*\d)[A-Za-z\d]{8,25}$/';
-        if(!preg_match($pattern, $pass)){
-            $errores .= 'La contraseña debe tener entre 8 y 25 caracteres y contener al menos 1 número,';
-        }elseif(!isset($pass) || !isset($pass2)){
-            $errores .= 'Deben rellenarse ambos campos de contraseña,';
-        }elseif($pass != $pass2){
-            $errores .= 'Las contraseñas no coinciden,';
+            $errores = 'Debe aceptarse la política de privacidad para poder registrarse';
         }
 
 
