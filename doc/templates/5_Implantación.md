@@ -11,43 +11,41 @@
 
 ### 1.1- Instalación
 
-> *EXPLICACIÓN:* Neste apartado describiranse todos os pasos necesarios para que calquera persoa poida descargar o código do proxecto e continuar o seu desenvolvemento.
+Para poder continuar con la codificación de DevLink, aparte de una copia de la estrucura de la base de datos (que ya se encuentra en la carpeta DevLink/), es necesario tener docker y docker-compose instalados en el sistema. 
+Los requerimientos para instalar docker son: un sistema operativo de 64-bits, al menos 4GB de RAM y permitir la virtualización (en caso de windows activar la virtualización por hardware y en linux requiere tener un procesador con soporte para virtualización).
 >
-> Como:
-> 
-> - Requirimentos de hardware, servidores na nube, etc.
-> - Software necesario: servidores (Exemplo servidor Web), software externo co que interaciona a nosa aplicación, contenedores, etc.
-> - Carga inicial de datos na base de datos. Migración de datos xa existentes noutros formatos.
-> - Usuarios da aplicación.
-> - Diagrama final de despregue (se hai variacións con respecto ó realizado na anterior fase).
+Una vez instalado docker y docker-compose solo es necesario clonar el repositorio, entrar en la carpeta DevLink y ejecutar el comando sudo docker-compose up (en linux en este caso).
+>
+En caso de que no se vean las imágenes se debe a un problema de permisos en /assets, al conceder permisos a la carpeta deberían verse las imágenes.
 
 ### 1.2- Administración do sistema
 
-> *EXPLICACIÓN:* Neste apartado indicarase información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando.
+Una vez esté lanzado por completo el sistema de DevLink se llevarán a cabo copias de seguridad tanto del sistema como de la base de datos de forma semanal, como mucho cada dos semanas.
 >
-> Como:
-> 
-> - Copias de seguridade do sistema.
-> - Copias de seguridade da base de datos.
-> - Xestión de usuarios.
-> - Xestión seguridade.
-> - Xestión de incidencias, que poden ser de dous tipos: de sistema (accesos non autorizados á BD, etc) ou de fallos no software.
+Los administradores se encargaran de que los usuarios cumplen las normas de respeto y convivencia, pudiendo alertar e incluso bloquear usuarios de ser estrictamente necesario.
 >
-> No caso de que sexan precisas.
-
-En caso de que no se vean las imágenes se debe a un problema de permisos en /assets, al conceder permisos a la carpeta deberían verse las imágenes
+Para la gestión de seguridad se deberán implementar: cifrado de contraseñas, control de sesiones, protección ante injecciones SQL y uso de HTTPS
 
 ## 2- Manual de usuario
 
-> *EXPLICACIÓN:* Neste apartado fara
+Registro del usuario: lo primero que se debe hacer es registrarse dando un nombre, email y contraseña válidos, después será redirigido a la página de login donde podrá entrar en su usuario a través del email y contraseña usados anteriormente.
 >
-> - Indicar se será necesario formar ós usuarios. En caso afirmativo planificar.
-> - Manual de usuario, FAQ ou outro xeito que sexa o máis adecuado para que os usuarios saiban usar a nosa aplicación informática.
+Tras haber iniciado sesión el usuario entra a la página del portfolio en la que si es la primera vez que entra se le aparecerá un formulario de datos a rellenar para poder crearlo, también puede modificar el portfolio una vez creado.
 >
-> Todo esto se a aplicación require de manual de usuario.
+En caso de que el usuario creado sea de tipo empresa, lo primero que verá será una página con las ofertas que han sido creadas por el usuario, pudiendo tener varias (en el caso de usuario premium), o ninguna. Estas ofertas también se pueden buscar, modificar o eliminar.
+>
+El usuario puede acceder al foro mediante el menú en la cabecera, en el foro se puede buscar entradas según el título, crear entradas propias, si se necesita ayuda con cualquier tema, y modificar o eliminar las entradas que ya fueron creadas por el usuario anteriormente.
+>
+De la misma forma que en el foro el usuario puede filtrar las ofertas de empleo, siendo esta la única interacción del usuario con esta página.
+>
+Para los usuarios de tipo empresa en vez de un listado de ofertas de empleo de terceros, podrá acceder a una lista de portfolios de los programadores registrados en la aplicacición.
+>
+Se puede cerrar la sesión y volver a la página de login con el boton que se encuentra en la esquina superior derecha
 
 ## 3- Melloras futuras
 
-> *EXPLICACIÓN:* Neste apartado incluiranse as posibilidades de mellora da aplicación no futuro.
+Una de las posibles mejoras a futuro será la implementación de Xeditable para la edición del portfolio, haciendo que la aplicación se vea estéticamente mejor ya que no hay que recurrir a formularios.
+>
+Otra posible mejora es añadir un chat de ia para aconsejar a los usuarios sobre que poner en los portfolios o en las ofertas de empleo para que llamen más la atención
 >
 [**<-Anterior**](../../README.md)

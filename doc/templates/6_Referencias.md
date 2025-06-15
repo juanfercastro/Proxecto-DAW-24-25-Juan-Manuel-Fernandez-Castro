@@ -9,7 +9,11 @@
 > *EXPLICACIÓN:* Neste apartado incluirás todas as referencias empregadas: webs, libros, etc. Este anexo débese ir cubrindo a medida que se vaia desenvolvendo o proxecto.
 
 ## 1- Sitios web de documentación técnica
-
+[Documentación de PHP](https://www.php.net/manual/es/index.php)
+>
+[Bootstrap para formulario](https://getbootstrap.com/docs/5.3/forms/overview/)
+>
+[jQuery para AJAX y filtro](https://jquery.com/)
 ## 2- Fontes de interes
 Referencia para la landing page: 
  - [lingoda](https://www.lingoda.com/es/)
@@ -21,10 +25,10 @@ Referencia iconos login: [Codeanywhere](https://codeanywhere.com/signin)
 Iconos: [Fontawesome](https://fontawesome.com/icons)
 >
 Imagenes: [Unsplash](https://unsplash.com/es)
-## 3- Sitios oficiais do software utilizado
-[Bootstrap para formulario](https://getbootstrap.com/docs/5.3/forms/overview/)
 >
-[jQuery para AJAX y filtro](https://jquery.com/)
+Referencia de las tabs en foro: [Ceogest](https://ceogest.com/) (necesrio crear una cuenta para ver las datatables).
+## 3- Sitios oficiais do software utilizado
+
 
 ## 4- Normas ou documentos legais
 
