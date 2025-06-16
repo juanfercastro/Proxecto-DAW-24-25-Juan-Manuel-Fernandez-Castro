@@ -27,7 +27,7 @@ Una vez esté lanzado por completo el sistema de DevLink se llevarán a cabo cop
 >
 Los administradores se encargaran de que los usuarios cumplen las normas de respeto y convivencia, pudiendo alertar e incluso bloquear usuarios de ser estrictamente necesario.
 >
-Para la gestión de seguridad se deberán implementar: cifrado de contraseñas, control de sesiones, protección ante injecciones SQL y uso de HTTPS
+Para la gestión de seguridad se deberán implementar: el uso de HTTPS, la protección contra sql inyection, cifrado de contraseña y control de usuarios ya esta hecho
 
 ## 2- Manual de usuario
 
