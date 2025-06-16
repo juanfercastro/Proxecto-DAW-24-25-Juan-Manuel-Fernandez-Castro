@@ -17,6 +17,9 @@ Los requerimientos para instalar docker son: un sistema operativo de 64-bits, al
 Una vez instalado docker y docker-compose solo es necesario clonar el repositorio, entrar en la carpeta DevLink y ejecutar el comando sudo docker-compose up (en linux en este caso).
 >
 En caso de que no se vean las imágenes se debe a un problema de permisos en /assets, al conceder permisos a la carpeta deberían verse las imágenes.
+>
+En caso de no ser capaz de instalar docker puedes descargar la máquina virtual [aqui](https://mega.nz/file/CR0yRISR#la78QQlQYI5GA5s_Nipv6wdRTncmN156RzC7PVPm8DU).
+La contraseña del usuario es abc123.
 
 ### 1.2- Administración do sistema
 
