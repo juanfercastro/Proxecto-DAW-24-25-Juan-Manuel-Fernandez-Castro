@@ -14,8 +14,9 @@
 ![Diagrama de casos de uso](/doc/img/casos%20de%20uso.png "Casos de uso")
 
 ## 3- Diagrama de Base de Datos
-
+En el diagrama del modelo entidad-relacion faltan las relaciones "Ver" entre Developer - Ofertas y entre Empresa - Portfolio debido a que no podía ponerlas sin tener que atravesar todo en el medio
 ![Modelo entidad-relacion](/doc/img/modelo%20entidad-relacion.png "Entidad-relacion")
+>
 ![Modelo relacional](/doc/img/modelo%20relacional.png "relacional")
 
 ## 4- Deseño de interface de usuarios
