@@ -10,7 +10,7 @@ CREATE TABLE usuarios(
     nombre VARCHAR(50) NOT NULL,
     apellidos VARCHAR(100),
     email VARCHAR(100) UNIQUE NOT NULL,
-    contrasena VARCHAR(30) NOT NULL,
+    contrasena VARCHAR(64) NOT NULL,
     tipo_usuario ENUM('developer','empresa','admin') DEFAULT 'developer',
     premium tinyint(1) DEFAULT 0
 );
@@ -19,7 +19,7 @@ CREATE TABLE usuarios(
 CREATE TABLE portfolios(
     id_portfolio INT AUTO_INCREMENT PRIMARY KEY,
     id_desarrollador INT UNIQUE NOT NULL,
-    especialización varchar(75) NOT NULL,
+    especializacion varchar(75) NOT NULL,
     tecnologias TEXT NOT NULL,
     sobre_mi TEXT NOT NULL,
     CONSTRAINT fk_desarrollador FOREIGN KEY (id_desarrollador) REFERENCES usuarios(id_usuario) ON DELETE CASCADE
@@ -69,3 +69,8 @@ CREATE TABLE comentarios(
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
     CONSTRAINT fk_entrada FOREIGN KEY (id_entrada) REFERENCES entradas(id_entrada)
 );
+
+--insercion de usuarios
+INSERT INTO usuarios(nombre,email,contrasena,tipo_usuario) VALUES 
+('Jose Manuel', 'josema@gmail.com',sha1('josemita12'),'developer'),
+('Google', 'google@gmail.com',sha1('google1274'), 'empresa');
