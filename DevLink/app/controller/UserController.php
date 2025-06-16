@@ -25,11 +25,29 @@ class UserController extends Controller{
         }
     }
 
+    public function showPortfoliosEmpresa(){
+        if (!isset($_SESSION['nombre'])) {
+            $this->loginForm();
+        }else{
+            $this->view->show('portfoliosEmpresa');
+            exit;
+        }
+    }
+
     public function showOfertas(){
         if (!isset($_SESSION['nombre'])) {
             $this->loginForm();
         }else{
             $this->view->show('ofertas');
+            exit;
+        }
+    }
+
+    public function showOfertasEmpresa(){
+        if (!isset($_SESSION['nombre'])) {
+            $this->loginForm();
+        }else{
+            $this->view->show('ofertasEmpresa');
             exit;
         }
     }
@@ -125,8 +143,12 @@ class UserController extends Controller{
         if(empty($errores)){
             $_SESSION['id'] = $usuario->getId();
             $_SESSION['nombre'] = $usuario->getNombre();
-            $_SESSION ['tipo'] = $usuario->getTipo();
-            header("Location:?controller=UserController&action=showPortfolio");
+            $_SESSION['tipo'] = $usuario->getTipo();
+            if($_SESSION['tipo']=='empresa'){
+                header("Location:?controller=UserController&action=showOfertasEmpresa");
+            }else{
+                header("Location:?controller=UserController&action=showPortfolio");
+            }
             exit;
         }
 

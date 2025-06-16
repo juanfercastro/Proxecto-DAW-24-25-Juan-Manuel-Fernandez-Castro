@@ -19,9 +19,16 @@
     
     <nav class="nav-menu">
       <ul>
-        <li class="nav-item"><a href="?controller=UserController&action=showPortfolio">Portfolio</a></li>
-        <li class="nav-item"><a href="?controller=ForoController&action=showForo">Foro</a></li>
-        <li class="nav-item"><a href="?controller=UserController&action=showOfertas">Ofertas</a></li>
+        <?php if(isset($_SESSION['id'])){ 
+           if($_SESSION['tipo'] == 'empresa') {?>
+            <li class="nav-item"><a href="?controller=UserController&action=showOfertasEmpresa">Ofertas</a></li>
+            <li class="nav-item"><a href="?controller=UserController&action=showPortfoliosEmpresa">Portfolios</a></li>
+          <?php }else{ ?>
+            <li class="nav-item"><a href="?controller=UserController&action=showPortfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="?controller=UserController&action=showOfertas">Ofertas</a></li>
+          <?php } 
+        } ?>
+          <li class="nav-item"><a href="?controller=ForoController&action=showForo">Foro</a></li>
         <?php if(isset($_SESSION['id'])){ ?>
           <li><a href="?controller=UserController&action=logout" class="boton">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a></li>
         <?php }else{ ?>
