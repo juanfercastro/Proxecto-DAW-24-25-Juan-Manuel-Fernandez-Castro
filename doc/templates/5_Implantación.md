@@ -30,7 +30,10 @@ Los administradores se encargaran de que los usuarios cumplen las normas de resp
 Para la gestión de seguridad se deberán implementar: el uso de HTTPS, la protección contra sql inyection, cifrado de contraseña y control de usuarios ya esta hecho
 
 ## 2- Manual de usuario
-Usuario de tipo desarrollador dado de alta:josema@gmail.com. Contraseña: josemita12.
+Usuario de tipo desarrollador dado de alta: josema@gmail.com. Contraseña: josemita12
+>
+Usuario de tipo empresa dado de alta: google@gmail.com. Contraseña: google1274
+>
 Se puede llevar a cabo registro de nuevos usuarios en caso de ser necesario
 >
 Registro del usuario: lo primero que se debe hacer es registrarse dando un nombre, email y contraseña válidos, después será redirigido a la página de login donde podrá entrar en su usuario a través del email y contraseña usados anteriormente.
