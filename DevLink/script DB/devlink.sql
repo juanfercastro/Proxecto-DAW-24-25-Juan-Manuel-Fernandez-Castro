@@ -70,7 +70,7 @@ CREATE TABLE comentarios(
     CONSTRAINT fk_entrada FOREIGN KEY (id_entrada) REFERENCES entradas(id_entrada)
 );
 
---insercion de usuarios
+-- Insercion de usuarios
 INSERT INTO usuarios(nombre,email,contrasena,tipo_usuario) VALUES 
 ('Jose Manuel', 'josema@gmail.com',sha1('josemita12'),'developer'),
 ('Google', 'google@gmail.com',sha1('google1274'), 'empresa');

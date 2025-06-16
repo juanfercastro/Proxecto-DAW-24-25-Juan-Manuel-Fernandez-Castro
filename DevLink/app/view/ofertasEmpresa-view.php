@@ -19,6 +19,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" class="icon-input" id="buscar-entrada" placeholder="Busca ofertas...">
                     </div>
+                    <button class='boton'>
+                        <i class='fas fa-plus'></i> <span>Nueva Oferta</span>
+                    </button>
                 </div>
             </section>
             <section class="foro-datatable">
@@ -26,6 +29,14 @@
                     <div class='card-foro'>
                         <div class='card-header'>
                             <h4>Frontend Junior con conocimientos en React</h4>
+                            <div id='opciones'>
+                                <button class='boton btn-editar' data-id='".$entrada->getId_entrada()."'  onclick='window.editEntrada.showModal()'>
+                                    <i class='fa-solid fa-pen-to-square'></i>
+                                </button>
+                                <button class='boton btn-eliminar' data-id='".$entrada->getId_entrada()."'>
+                                    <i class='fa-solid fa-trash'></i>
+                                </button>
+                            </div>
                         </div>
                         <p class='card-body'>Buscamos programador/a junior con conocimientos básicos de React y Tailwind para unirse a startup de e-learning.</p>
                         <div class='card-footer'>
@@ -37,6 +48,14 @@
                     <div class='card-foro'>
                         <div class='card-header'>
                             <h4>Desarrollador/a Full Stack para fintech</h4>
+                            <div id='opciones'>
+                                <button class='boton btn-editar' data-id='".$entrada->getId_entrada()."'  onclick='window.editEntrada.showModal()'>
+                                    <i class='fa-solid fa-pen-to-square'></i>
+                                </button>
+                                <button class='boton btn-eliminar' data-id='".$entrada->getId_entrada()."'>
+                                    <i class='fa-solid fa-trash'></i>
+                                </button>
+                            </div>
                         </div>
                         <p class='card-body'>Startup del sector financiero necesita perfil full stack con dominio de PHP y Vue.js. Trabajo híbrido desde Madrid.</p>
                         <div class='card-footer'>
