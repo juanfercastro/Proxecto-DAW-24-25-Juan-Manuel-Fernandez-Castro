@@ -49,7 +49,7 @@ El analisis de la idea seria:
 
 DevLink está dirigida a todos los miembros del sector de la programacion, tanto si estan en búsqueda de empleo o no, además de empresas dedicadas al mismo sector que de igual forma esten buscando trabajadores o no.
 >
-Los usuarios serán todas las personas físicas que usen la aplicacion y los clientes serán tanto las empresas o entidades que recurran a la aplicacion, ya que para el publicitarse deberán realizar un pago, como las personas físicas que recurran a las funcionalidades premium de la aplicacion
+Los usuarios serán todas las personas físicas o entidades empresariales que usen la aplicacion y los clientes serán tanto las empresas como las personas físicas que recurran a las funcionalidades premium de la aplicacion. Estas conllevan la eliminación de la publicidad y la opción de añadir filtros en las búsquedas, además en el caso de las empresas la cantidad de ofertas de empleo que podrán publicar estarán limitadas a menos que compren una cuenta premium, en el caso de los freelancers se les dará prioridad en la búsqueda de portfolios por parte de una empresa y si no son premium la cantidad de cambios que se podrán hacer en su portfolio una vez creado estará limitada.
 
 ### 2.4- Competencia
 
