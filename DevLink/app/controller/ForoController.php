@@ -44,8 +44,8 @@ class ForoController extends Controller{
 
     public function addEntrada(){
         $id_creador = empty($_POST['id_creador'])?null:$_POST['id_creador'];
-        $titulo = empty($_POST['titulo'])?null:$_POST['titulo'];
-        $contenido = empty($_POST['contenido'])?null:$_POST['contenido'];
+        $titulo = empty($_POST['titulo'])?null:htmlspecialchars($_POST['titulo']);
+        $contenido = empty($_POST['contenido'])?null:htmlspecialchars($_POST['contenido']);
 
         if(!isset($id_creador)){
             echo json_encode(['success' => false, 
@@ -81,8 +81,8 @@ class ForoController extends Controller{
     public function updateEntrada(){
         $id_entrada = empty($_POST['id_entrada'])?null:$_POST['id_entrada'];
         $id_creador = empty($_POST['id_creador'])?null:$_POST['id_creador'];
-        $titulo = empty($_POST['titulo'])?null:$_POST['titulo'];
-        $contenido = empty($_POST['contenido'])?null:$_POST['contenido'];
+        $titulo = empty($_POST['titulo'])?null:htmlspecialchars($_POST['titulo']);
+        $contenido = empty($_POST['contenido'])?null:htmlspecialchars($_POST['contenido']);
 
         if(!isset($id_entrada)){
             echo json_encode(['success' => false, 

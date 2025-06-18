@@ -53,12 +53,12 @@ class UserController extends Controller{
     }
 
     public function addUser(){
-        $nombre = empty($_POST['nombre'])? null: $_POST['nombre'];
-        $apellidos = empty($_POST['apellidos'])? null: $_POST['apellidos'];
-        $mail = empty($_POST['mail'])?null:$_POST['mail'];
-        $tipo = empty($_POST['tipo_user'])?null:$_POST['tipo_user'];
-        $pass = empty($_POST['pass'])?null:$_POST['pass'];
-        $pass2 = empty($_POST['pass2'])?null:$_POST['pass2'];
+        $nombre = empty($_POST['nombre'])? null: htmlspecialchars($_POST['nombre']);
+        $apellidos = empty($_POST['apellidos'])? null: htmlspecialchars($_POST['apellidos']);
+        $mail = empty($_POST['mail'])?null:htmlspecialchars($_POST['mail']);
+        $tipo = empty($_POST['tipo_user'])?null:htmlspecialchars($_POST['tipo_user']);
+        $pass = empty($_POST['pass'])?null:htmlspecialchars($_POST['pass']);
+        $pass2 = empty($_POST['pass2'])?null:htmlspecialchars($_POST['pass2']);
         $politica = isset($_POST['pol_priv'])? 1 : 0;
 
         $errores = '';
@@ -119,8 +119,8 @@ class UserController extends Controller{
     }
 
     public function login(){
-        $email = empty($_POST['mail'])?null:$_POST['mail'];
-        $pass = empty($_POST['pass'])?null:sha1($_POST['pass']);
+        $email = empty($_POST['mail'])?null:htmlspecialchars($_POST['mail']);
+        $pass = empty($_POST['pass'])?null:sha1(htmlspecialchars($_POST['pass']));
 
         $errores = '';
         if(!isset($email) || !isset($pass)){
