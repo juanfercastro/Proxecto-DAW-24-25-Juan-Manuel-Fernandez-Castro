@@ -18,8 +18,10 @@ Una vez instalado docker y docker-compose solo es necesario clonar el repositori
 >
 En caso de que no se vean las imágenes se debe a un problema de permisos en /assets, al conceder permisos a la carpeta deberían verse las imágenes.
 >
-En caso de no ser capaz de instalar docker puedes descargar la máquina virtual [aqui](https://mega.nz/file/CR0yRISR#la78QQlQYI5GA5s_Nipv6wdRTncmN156RzC7PVPm8DU).
+En caso de no ser capaz de instalar docker puedes descargar la máquina virtual [aqui](https://mega.nz/file/CR0yRISR#la78QQlQYI5GA5s_Nipv6wdRTncmN156RzC7PVPm8DU).Los requerimientos de la propia máquina virtual son más elevados ya que requiere de una máquina real de al menos 12GB de RAM (la máquina virtual usa 8GB), y un procesador de al menos 4 núcleos que son los que requiere la máquina virtual.
 La contraseña del usuario es abc123.
+>
+En caso de querer lanzar DevLink en un servidor ya en funcionamiento, copia los archivos dentro de la carpeta DevLink/ y deberás cambiar todos los enlaces, dirección de las imágenes, archivos js, archivos css y los include de los controladores e index dentro de la carpeta app/, ten en cuenta el archivo globals dentro de la misma carpeta
 
 ### 1.2- Administración do sistema
 
